@@ -1,0 +1,18 @@
+[test]
+other = "Chinese"
+[speaker]
+other = "Speaker"
+[sponsorship]
+other = "Sponsorship"
+[pressKit]
+other = "Press Kit"
+[codeOfConduct]
+other = "Code of conduct"
+[mediaContact]
+other = "Media Contact"
+[press]
+other = "Press"
+[CCA]
+other = "CCA 3.0"
+[subscription]
+other = "Subscription"
