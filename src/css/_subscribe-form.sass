@@ -1,0 +1,29 @@
+@import "variables"
+@import "fonts"
+
+.c-subscribe-form
+  width: 241px
+  display: flex
+  flex-direction: column
+  &__input
+    border: 0
+    border-bottom: 1px solid $text-color-inverse
+    -webkit-appearance: none
+    font-family: SharpSlab-Medium, serif
+    font-size: 1rem
+    color: $text-color-inverse
+    background-color: transparent
+    line-height: 3.8
+    &::-webkit-input-placeholder
+      color: $text-color-inverse
+      vertical-align: top
+    &::-moz-placeholder
+      color: $text-color-inverse
+    &:-ms-input-placeholder
+      color: $text-color-inverse
+    &:-moz-placeholder
+      color: $text-color-inverse
+    &:focus
+      outline: none
+  &__btn
+    margin-top: 40px
