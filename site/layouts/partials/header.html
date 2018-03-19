@@ -8,4 +8,18 @@
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-  	<p>Header</p>
+    <section class="c-header c-header__{{$.Param "page"}}">
+      <div class="c-navbar">
+        <div class="c-navbar__logo"></div>
+        <button class="c-navbar__menu-toggle"/>
+        <li class="c-navbar__menu">
+          <ul>{{ i18n "callForSpeakers" }}</ul>
+          <ul>{{ i18n "callForSponsors" }}</ul>
+          <ul>{{ i18n "pressKit" }}</ul>
+        </li>
+      </div>
+      <div class="c-header__intro">
+        <h1 class="c-header__title"><h1>
+        <h2 class="c-header__subtitle"><h2>
+      </div>
+    </section>

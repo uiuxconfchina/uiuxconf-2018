@@ -1,0 +1,19 @@
+@import "variables"
+@import "fonts"
+
+.c-header
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  &__homepage
+    background-image: url("../img/bg/bg-homepage-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-homepage-desktop.jpg")
+  &__call-for-speaker
+    background-image: url("../img/bg/bg-call-for-speaker-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-call-for-speaker-desktop.jpg")
+  &__call-for-sponsor
+    background-image: url("../img/bg/bg-call-for-sponsor-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-homepage-desktop.jpg")

@@ -14,5 +14,11 @@ other = "Media Contact"
 other = "Press"
 [CCA]
 other = "CCA 3.0"
+[typeEmail]
+other = "Type your E-mail"
 [subscription]
 other = "Subscription"
+[callForSpeakers]
+other = "Call for speakers"
+[callForSponsors]
+other = "Call for sponsors"
