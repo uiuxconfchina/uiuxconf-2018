@@ -1,5 +1,5 @@
 [test]
-other = "Chinese"
+other = "English"
 [speaker]
 other = "Speaker"
 [sponsorship]
@@ -22,3 +22,7 @@ other = "Subscription"
 other = "Call for speakers"
 [callForSponsors]
 other = "Call for sponsors"
+[logoAlt]
+other = "UIUX conference logo"
+[langBtn]
+other = "中文"

@@ -2,9 +2,11 @@
 @import "fonts"
 
 .c-subscribe-form
-  width: 241px
+  width: 100%
   display: flex
   flex-direction: column
+  @media all and (min-width: 48em)
+    width: 241px
   &__input
     border: 0
     border-bottom: 1px solid $text-color-inverse
@@ -16,7 +18,6 @@
     line-height: 3.8
     &::-webkit-input-placeholder
       color: $text-color-inverse
-      vertical-align: top
     &::-moz-placeholder
       color: $text-color-inverse
     &:-ms-input-placeholder

@@ -10,16 +10,24 @@
   <body>
     <section class="c-header c-header__{{$.Param "page"}}">
       <div class="c-navbar">
-        <div class="c-navbar__logo"></div>
-        <button class="c-navbar__menu-toggle"/>
-        <li class="c-navbar__menu">
-          <ul>{{ i18n "callForSpeakers" }}</ul>
-          <ul>{{ i18n "callForSponsors" }}</ul>
-          <ul>{{ i18n "pressKit" }}</ul>
-        </li>
+        <div class="c-navbar__bar">
+          <a class="c-navbar__logo" href="/">
+            <img src="./img/logo.png" alt={{ i18n "logoAlt"}}/>
+          </a>
+          <div class="c-navbar__buttons">
+            <a class="c-navbar__lang" id="langToggle" data-lang="cn">{{ i18n "langBtn" }}</a>
+            <button class="c-navbar__toggle c-navbar__toggle_hamburger" id="menuToggle"/>
+          </div>
+        </div>
+        <ul class="c-navbar__menu u-hidden" id="menu">
+          <li class="c-navbar__link"><a href="/callforspeaker">{{ i18n "callForSpeakers" }}</a></li>
+          <li class="c-navbar__link"><a href="/callforsponsor">{{ i18n "callForSponsors" }}</a></li>
+          <li class="c-navbar__link"><a href="#">{{ i18n "pressKit" }}</a></li>
+        </ul>
       </div>
       <div class="c-header__intro">
-        <h1 class="c-header__title"><h1>
-        <h2 class="c-header__subtitle"><h2>
+        <h1 class="c-header__title">{{ $.Param "headerTitle" }}<h1>
+        <h2 class="c-header__subtitle">{{ $.Param "headerSubTitle" }}<h2>
+        {{ partial "subscribe-form" . }}
       </div>
     </section>
