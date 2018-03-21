@@ -1,0 +1,16 @@
+<div class="c-navbar">
+  <div class="c-navbar__bar">
+    <a class="c-navbar__logo" href="/">
+      <img src="./img/logo.png" alt={{ i18n "logoAlt"}}/>
+    </a>
+    <div class="c-navbar__buttons">
+      <a class="c-navbar__lang" id="langToggle">{{ i18n "langBtn" }}</a>
+      <button class="c-navbar__toggle c-navbar__toggle_hamburger" id="menuToggle"/>
+    </div>
+    <button class="c-btn-primary c-navbar__btn">{{ i18n "ticket" }}</button>
+  </div>
+  <ul class="c-navbar__menu u-hidden" id="menu">
+    <li class="c-navbar__link"><a href="/callforspeaker">{{ i18n "callForSpeakers" }}</a></li>
+    <li class="c-navbar__link"><a href="/callforsponsor">{{ i18n "callForSponsors" }}</a></li>
+  </ul>
+</div>

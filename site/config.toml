@@ -13,13 +13,7 @@ page = "homepage"
 [languages.en]
 weight = 0
 title  = "UIUX Conference Shanghai 2018"
-[languages.en.params]
-headerTitle = "UI/UX Conference China"
-headerSubTitle = "09.01 - 02 2018 @SHANGHAI"
 
 [languages.cn]
 weight = 1
 title = "UIUX Conference Shanghai 2018"
-[languages.cn.params]
-headerTitle = "UI/UX Conference China"
-headerSubTitle = "09.01 - 02 2018 @SHANGHAI"

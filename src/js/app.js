@@ -13,18 +13,16 @@ const addToggleMenuListener = () => {
   button.addEventListener('click', toggleMenu)
 }
 
-const toggleLanguage = (lang) => {
-  const button = document.getElementById('langToggle')
+const toggleLanguage = () => {
   const path = window.location.pathname
-  const newPath = `/${lang}${path}`
+  const isChinese = path.slice(1,3) === 'cn'
+  const newPath = isChinese ? path.slice(3) : `/cn${path}`
   window.location.pathname = newPath
-  lang === 'cn' ? button.setAttribute('data-lang', 'en') : button.setAttribute('data-lang', 'cn')
 }
 
 const addToggleLanguageListener = () => {
   const button = document.getElementById('langToggle')
-  const lang = button.getAttribute('data-lang')
-  button.addEventListener('click', () => toggleLanguage(lang))
+  button.addEventListener('click', toggleLanguage)
 }
 
 const init = () => {

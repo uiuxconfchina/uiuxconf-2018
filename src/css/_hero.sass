@@ -1,0 +1,92 @@
+@import "variables"
+@import "fonts"
+
+.c-hero
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  color: $text-color-inverse
+  text-align: left
+  @media all and (min-width: 48em)
+    height: 100vh
+  .u-container
+    @media all and (min-width: 48em)
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      padding-top: 18.8vh
+      height: 100%
+  &__homepage
+    background-image: url("../img/bg/bg-homepage-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-homepage-desktop.jpg")
+  &__callforspeaker
+    background-image: url("../img/bg/bg-call-for-speaker-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-call-for-speaker-desktop.jpg")
+  &__callforsponsor
+    background-image: url("../img/bg/bg-call-for-sponsor-mobile.jpg")
+    @media all and (min-width: 48em)
+      background-image: url("../img/bg/bg-call-for-sponsor-desktop.jpg")
+  &__logo
+    width: 75px
+    margin-top: 53px
+    margin-bottom: 20px
+    img
+      width: 100%
+      height: auto
+    @media all and (min-width: 48em)
+      display: none
+  &__title
+    font-family: MuseoSlab500
+    text-transform: uppercase
+    font-size: 1.5rem
+    line-height: 40px
+    letter-spacing: 6px
+    margin: 40px 0
+    @media all and (min-width: 48em)
+      font-size: 3.7vh
+      margin-top: 0
+      line-height: 1.57
+  &__subtitle
+    text-transform: uppercase
+    font-family: MuseoSlab500
+    font-size: 1.5rem
+    letter-spacing: 6px
+    line-height: 40px
+    margin-top: 80px
+    @media all and (min-width: 48em)
+      font-size: 3.7vh
+      line-height: 1.57
+      margin-top: 11.6vh
+  &__intro
+    padding: 0 16px 70px
+    .c-subscribe-form
+      &__input
+        &::-webkit-input-placeholder
+          opacity: 0.5
+        &::-moz-placeholder
+          opacity: 0.5
+        &:-ms-input-placeholder
+          opacity: 0.5
+        &:-moz-placeholder
+          opacity: 0.5
+  &__content
+    line-height: 1.45
+    font-size: 1rem
+    @media all and (min-width: 48em)
+      font-size: 2.3vh
+      padding-right: 13%
+  .c-subscribe-form
+    @media all and (min-width: 48em)
+      display: none
+  &__btn
+    &_desktop
+      display: none
+      margin-top: 4.5vh
+      @media all and (min-width: 48em)
+        display: block
+    &_mobile
+      margin-top: 20px
+      @media all and (min-width: 48em)
+        display: none
