@@ -10,7 +10,7 @@
     <button class="c-btn-primary c-navbar__btn">{{ i18n "ticket" }}</button>
   </div>
   <ul class="c-navbar__menu u-hidden" id="menu">
-    <li class="c-navbar__link"><a href="/callforspeaker">{{ i18n "callForSpeakers" }}</a></li>
-    <li class="c-navbar__link"><a href="/callforsponsor">{{ i18n "callForSponsors" }}</a></li>
+    <li class="c-navbar__link"><a href={{ "/callforspeaker" | relLangURL }}>{{ i18n "callForSpeakers" }}</a></li>
+    <li class="c-navbar__link"><a href={{ "/callforsponsor" | relLangURL }}>{{ i18n "callForSponsors" }}</a></li>
   </ul>
 </div>
