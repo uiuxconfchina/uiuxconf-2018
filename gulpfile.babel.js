@@ -10,6 +10,9 @@ import cssNano from "gulp-cssnano";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import uglify from "gulp-uglify"
+import pump from "pump"
+import htmlmin from "gulp-htmlmin"
 
 const browserSync = BrowserSync.create();
 
@@ -22,8 +25,10 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("compileSite", ["css", "js", "fonts", "compressJS", "compressHTML"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build", ["compileSite"], () => minifyHtml())
+gulp.task("compileSite-preview", ["css", "js", "fonts", "compressJS", "compressHTML"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build-preview", ["compileSite-preview"], () => minifyHtml())
 
 // Compile CSS
 gulp.task("css", () => (
@@ -54,8 +59,22 @@ gulp.task("js", (cb) => {
   });
 });
 
+// Compress JS
+gulp.task("compressJS", ["js"], (cb) => {
+  pump([
+        gulp.src("dist/*.js"),
+        uglify(),
+        gulp.dest("dist")
+    ],
+    cb
+  );
+});
+
+// Compress HTML
+gulp.task("compressHTML", () => minifyHtml());
+
 // Move all fonts in a flattened directory
-gulp.task('fonts', () => (
+gulp.task("fonts", () => (
   gulp.src("./src/fonts/**/*")
     .pipe(flatten())
     .pipe(gulp.dest("./dist/fonts"))
@@ -70,10 +89,18 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
+  gulp.watch("./dist/*.js", ["minifyJS"]);
+  gulp.watch("./dist/**/*.html", ["compressHTML"]);
   gulp.watch("./src/css/**/*.sass", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
+
+function minifyHtml() {
+  return gulp.src("dist/**/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("dist"));
+}
 
 /**
  * Run hugo and build the site
