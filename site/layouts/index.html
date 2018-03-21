@@ -1,8 +1,60 @@
 {{ partial "header" . }}
 {{ partial "hero-homepage" . }}
-
-<h1>{{ $.Site.Title }}</h1>
-
-<p>{{ i18n "test" }}</p>
-
+<section class="c-content">
+  <div class="u-container">
+    <div class="c-content__section">
+      <h3 class="c-content__title">{{ i18n "homepageSection1Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">{{ i18n "homepageSection1Paragraph1" }}</p>
+        <p class="c-content__paragraph">{{ i18n "homepageSection1Paragraph2" }}</p>
+      </div>
+      <img class="c-content__media" src="./img/homepage/about.jpg" alt=""/>
+    </div>
+    <div class="c-content__section">
+      <h3 class="c-content__title">{{ i18n "homepageSection2Title" }}</h3>
+        <div class="c-content__wrapper">
+        <p class="c-content__paragraph">{{ i18n "homepageSection2Paragraph" }}</p>
+        <p class="c-content__signature">{{ i18n "homepageSection2Signature" }}</p>
+        <button class="c-btn-primary c-content__btn">{{ i18n "joinUs" }}</button>
+      </div>
+      <img class="c-content__media" src="./img/homepage/speaker.jpg" alt=""/>
+    </div>
+    <div class="c-content__section">
+      <h3 class="c-content__title">{{ i18n "homepageSection3Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">{{ i18n "homepageSection3Paragraph" }}</p>
+        <p class="c-content__signature">{{ i18n "homepageSection3Signature" }}</p>
+        <button class="c-btn-primary c-content__btn">{{ i18n "sponsorUs" }}</button>
+      </div>
+      <img class="c-content__media" src="./img/homepage/sponsor.jpg" alt=""/>
+    </div>
+    <div class="c-content__section">
+      <h3 class="c-content__title">{{ i18n "homepageSection4Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">{{ i18n "homepageSection4Paragraph" }}</p>
+      </div>
+      <video class="c-content__media">
+        <source src="" type="">/>
+      </div>
+    </div>
+    <div class="c-content__section">
+      <h3 class="c-content__title">{{ i18n "homepageSection5Title" }}</h3>
+      <div class="c-content__partners c-content__wrapper">
+        <img class="c-content__partner" src="" alt=""/>
+        <img class="c-content__partner" src="" alt=""/>
+        <img class="c-content__partner" src="" alt=""/>
+        <img class="c-content__partner" src="" alt=""/>
+        <img class="c-content__partner" src="" alt=""/>
+        <img class="c-content__partner" src="" alt=""/>
+      </div>
+    </div>
+    <div class="c-content__section">
+      <img class="c-content__media" src="./img/homepage/organizer.jpg" alt=""/>
+      <h3 class="c-content__title">{{ i18n "homepageSection6Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">{{ i18n "homepageSection6Paragraph" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 {{ partial "footer" . }}
