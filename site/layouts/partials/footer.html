@@ -1,4 +1,37 @@
   <script src="app.js"></script>
-
+  <section class="c-footer">
+    <div class="c-footer__top">
+      <div class="u-container">
+        <div class="c-footer__nav">
+          <div class="c-footer-menu">
+            <a class="c-footer-menu__item" href={{ "/callforspeaker" | relLangURL }}>{{ i18n "speaker" }}</a>
+            <a class="c-footer-menu__item" href={{ "/callforsponsor" | relLangURL }}>{{ i18n "sponsorship" }}</a>
+            <a class="c-footer-menu__item" href="#">{{ i18n "pressKit" }}</a>
+          </div>
+          <div class="c-social-media">
+            <a class="c-social-media__item c-social-media__item_wechat" href="#"></a>
+            <a class="c-social-media__item c-social-media__item_instagram" href="#"></a>
+            <a class="c-social-media__item c-social-media__item_weibo" href="#"></a>
+            <a class="c-social-media__item c-social-media__item_twitter" href="#"></a>
+            <a class="c-social-media__item c-social-media__item_facebook" href="#"></a>
+          </div>
+        </div>
+        <div class="c-footer__subscribe">
+          {{ partial "subscribe-form" . }}
+        </div>
+      </div>
+    </div>
+    <div class="c-footer__bottom">
+      <div class="u-container">
+        <div class="c-footer-links">
+          <a class="c-footer-links__item" href="#">{{ i18n "codeOfConduct" }}</a>
+          <a class="c-footer-links__item" href="#">{{ i18n "mediaContact" }}</a>
+          <a class="c-footer-links__item" href="#">{{ i18n "press" }}</a>
+          <a class="c-footer-links__item" href="#">{{ i18n "CCA" }}</a>
+        </div>
+        <p class="c-footer__copyrights">@Wiredcraft 2018</p>
+      </div>
+    </div>
+  </section>
   </body>
 </html>

@@ -1,0 +1,41 @@
+@import "variables"
+@import "hero"
+@import "navbar"
+@import "footer"
+@import "subscribe-form"
+
+body,
+html
+  margin: 0
+  padding: 0
+
+body
+  font-size: 1em
+  text-align: center
+  color: $text-color
+  font-family: MuseoSlab300, serif
+
+a
+  color: inherit
+  text-decoration: none
+
+.u-container
+  max-width: 939px
+  margin: 0 auto
+
+.u-hidden
+  display: none
+
+.c-btn-primary
+  font-family: 'MuseoSlab500', serif
+  background-color: $primary-color
+  color: $text-color-inverse
+  border: 0
+  text-transform: uppercase
+  width: 220px
+  height: 55px
+  border-radius: 2px
+  font-size: 1rem
+  cursor: pointer
+  &:focus
+    outline: none

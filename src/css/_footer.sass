@@ -1,0 +1,93 @@
+@import "variables"
+@import "fonts"
+
+.c-footer
+  font-family: 'MuseoSlab500', serif
+  color: $text-color-inverse
+  &__top,
+  &__bottom
+    padding: 32px 20px
+    @media all and (min-width: 48em)
+      padding: 46px 20px 60px
+  &__top
+    background-color: $secondary-color
+    .u-container
+      @media all and (min-width: 48em)
+        display: flex
+  &__bottom
+    background-color: $primary-color
+    font-size: 0.75rem
+    @media all and (min-width: 48em)
+      font-size: 0.875rem
+      padding-top: 60px
+      padding-bottom: 68px
+    .u-container
+      @media all and (min-width: 48em)
+        display: flex
+        flex-direction: row-reverse
+        justify-content: center
+  &__nav
+    flex-grow: 2
+  &__subscribe
+    display: none
+    @media all and (min-width: 48em)
+      display: block
+  &__copyrights
+    opacity: 0.7
+    margin: 32px 0
+    @media all and (min-width: 48em)
+      margin: 0
+      padding: 0 15px
+
+.c-footer-menu,
+.c-footer-links
+  display: flex
+  flex-direction: column
+  @media all and (min-width: 48em)
+    flex-direction: row
+    justify-content: space-between
+
+.c-footer-menu
+  text-transform: uppercase
+  @media all and (min-width: 48em)
+    font-size: 1.25rem
+    padding-right: 18%
+    
+  &__item
+    padding: 20px 0
+
+.c-footer-links
+  @media all and (min-width: 48em)
+    display: block
+  &__item
+    padding: 13px 0
+    @media all and (min-width: 48em)
+      padding: 0 15px
+
+.c-social-media
+  margin: 32px auto 0
+  display: flex
+  width: 250px
+  justify-content: space-between
+  @media all and (min-width: 48em)
+    margin-left: 0
+    margin-right: 0
+    width: 350px
+    margin-top: 46px
+  &__item
+    width: 35px
+    height: 35px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    cursor: pointer
+    &_wechat
+      background-image: url('../img/social-media/wechat.png')
+    &_instagram
+      background-image: url('../img/social-media/instagram.png')
+    &_weibo
+      background-image: url('../img/social-media/weibo.png')
+    &_twitter
+      background-image: url('../img/social-media/twitter.png')
+    &_facebook
+      background-image: url('../img/social-media/facebook.png')

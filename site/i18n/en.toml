@@ -1,0 +1,56 @@
+[test]
+other = "English"
+[speaker]
+other = "Speaker"
+[sponsorship]
+other = "Sponsorship"
+[pressKit]
+other = "Media"
+[mediaContact]
+other = "Code of Conduct"
+[press]
+other = "Press Kit"
+[CCA]
+other = "CCA 3.0"
+[typeEmail]
+other = "Type your E-mail"
+[subscription]
+other = "Subscription"
+[callForSpeakers]
+other = "Call for speakers"
+[callForSponsors]
+other = "Call for sponsors"
+[logoAlt]
+other = "UIUX conference logo"
+[langBtn]
+other = "中文"
+[headerTitleHomepage1]
+other = "UI/UX"
+[headerTitleHomepage2]
+other = "Conference"
+[headerTitleHomepage3]
+other = "China 2018"
+[headerSubTitleHomepage1]
+other = "Shanghai"
+[headerSubTitleHomepage2]
+other = "09.01 - 02"
+[heroTitleCallForSponsor1]
+other = "Call"
+[heroTitleCallForSponsor2]
+other = "for sponsor"
+[heroContentCallForSponsor]
+other = "Support local and international artisists, for masters, pixel aficionados, and more at the first ever UI/UX Conference in Shanghai on September 1-2, 2018. This two-day community driven conference will feature 20+ talks focusing on storytelling, design strategy, best practices, creative inspiration and more. Count on experienced speakers sharing their expertise and experiences from international companies and thriving startups."
+[heroTitleCallForSpeaker1]
+other = "Call"
+[heroTitleCallForSpeaker2]
+other = "for speakers"
+[heroContentCallForSpeaker]
+other = "UI/UX Conf China 18 program reflects design in the real world: fast-paced, hustle and bustle, complex, inherently messy. It’s cross-channel, multi-device, trans-disciplinary. While this conference is first and foremost about design, it’s not just design for design’s sake; it’s an exploration of the intersection of design, technology, and business."
+[earlyBirdTicket]
+other = "Early bird ticket"
+[beASpeaker]
+other = "Be a speaker"
+[beASponsor]
+other = "Be a sponsor"
+[ticket]
+other = "ticket"

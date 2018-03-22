@@ -3,12 +3,16 @@ import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
 import flatten from "gulp-flatten";
+import autoprefixer from "autoprefixer";
+import sass from "gulp-sass";
 import postcss from "gulp-postcss";
-import cssImport from "postcss-import";
-import cssnext from "postcss-cssnext";
+import cssNano from "gulp-cssnano";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import uglify from "gulp-uglify"
+import pump from "pump"
+import htmlmin from "gulp-htmlmin"
 
 const browserSync = BrowserSync.create();
 
@@ -21,13 +25,21 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("compileSite", ["css", "js", "fonts", "compressJS", "compressHTML"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build", ["compileSite"], () => minifyHtml())
+gulp.task("compileSite-preview", ["css", "js", "fonts", "compressJS", "compressHTML"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build-preview", ["compileSite-preview"], () => minifyHtml())
 
-// Compile CSS with PostCSS
+// Compile CSS
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+  gulp.src("./src/css/*.sass")
+    .pipe(sass({
+      outputStyle:  "nested",
+      precision: 10,
+      includePaths: ["node_modules"],
+    }))
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(cssNano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -47,8 +59,22 @@ gulp.task("js", (cb) => {
   });
 });
 
+// Compress JS
+gulp.task("compressJS", ["js"], (cb) => {
+  pump([
+        gulp.src("dist/*.js"),
+        uglify(),
+        gulp.dest("dist")
+    ],
+    cb
+  );
+});
+
+// Compress HTML
+gulp.task("compressHTML", () => minifyHtml());
+
 // Move all fonts in a flattened directory
-gulp.task('fonts', () => (
+gulp.task("fonts", () => (
   gulp.src("./src/fonts/**/*")
     .pipe(flatten())
     .pipe(gulp.dest("./dist/fonts"))
@@ -63,10 +89,18 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./dist/*.js", ["minifyJS"]);
+  gulp.watch("./dist/**/*.html", ["compressHTML"]);
+  gulp.watch("./src/css/**/*.sass", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
+
+function minifyHtml() {
+  return gulp.src("dist/**/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("dist"));
+}
 
 /**
  * Run hugo and build the site
