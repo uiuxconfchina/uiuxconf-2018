@@ -3,14 +3,52 @@
 
 .c-content
   text-align: left
+  &__section
+    @media all and (min-width: 48em)
+      padding: 18.5vh 0
+  &__text
+    text-align: left
+    @media all and (min-width: 48em)
+      width: 56vw
+      max-width: 550px
+      position: absolute
+      top: 0
+    &_speaker
+      @media all and (min-width: 48em)
+        width: auto
   &__title
+    letter-spacing: 3px
     padding: 32px 16px 24px
     font-size: 1.5rem
     font-family: MuseoSlab500, serif
     margin: 0
+    &_partners
+      @media all and (min-width: 48em)
+        text-align: center
+    @media all and (min-width: 48em)
+      letter-spacing: 10px
+      font-size: 3.7vh
+      padding-top: 0
+      line-height: 1.6
+    &_speaker
+      @media all and (min-width: 48em)
+        font-size: 2.8vh
+        line-height: 1
   &__paragraph
     line-height: 1.5
     margin: 0
+    &_bottom
+      margin-top: 20px
+      @media all and (min-width: 48em)
+        margin-top: 50px
+    @media all and (min-width: 48em)
+      font-size: 2.8vh
+      letter-spacing: 2px
+      line-height: 1.6
+    &_speaker
+      @media all and (min-width: 48em)
+        font-size: 1rem
+        line-height: 1.5
   &__wrapper
     padding: 0 16px 32px
   &__signature
@@ -22,6 +60,12 @@
   &__media
     width: 100%
     height: auto
+    @media all and (min-width: 48em)
+      width: 38%
+    &_video
+      @media all and (min-width: 48em)
+        width: 55vw
+        max-width: 790px
   &__partners
     display: flex
     flex-direction: column
@@ -31,3 +75,5 @@
     background-repeat: no-repeat
     background-position: center
     background-size: contain
+  .u-container_wide
+    position: relative
