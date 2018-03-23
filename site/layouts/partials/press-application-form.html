@@ -1,0 +1,24 @@
+<form class="c-application-form">
+  <div class="u-container">
+    <div class="c-application-form__wrapper">
+      <h4 class="c-application-form__subtitle">{{ i18n "fillInHere" }}</h4>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="your-full-name" required="">
+        <label class="c-application-form__label">{{ i18n "yourFullName" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="organization" required="">
+        <label class="c-application-form__label">{{ i18n "organization" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="email" name="email" required="">
+        <label class="c-application-form__label">{{ i18n "email" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="mobile" required="">
+        <label class="c-application-form__label">{{ i18n "mobileOptional" }}</label>
+      </div>
+      <button class="c-btn-primary c-btn-primary_wide c-application-form__btn" type="submit">{{ i18n "applyForAccreditation" }}</button>
+    </div>
+  </div>
+</form>

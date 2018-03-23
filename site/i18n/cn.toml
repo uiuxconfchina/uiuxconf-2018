@@ -168,4 +168,12 @@ other = "Gold (70,000)"
 other = "Silver (50,000)"
 [bronzeLevel]
 other = "Bronze (35,000)"
+[yourFullName]
+other = "Your Full Name"
+[organization]
+other = "Organization"
+[mobileOptional]
+other = "Mobile (Optional)"
+[applyForAccreditation]
+other = "Apply for media accreditation"
 
