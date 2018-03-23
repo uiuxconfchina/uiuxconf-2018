@@ -1,0 +1,31 @@
+<form class="c-application-form">
+  <h3 class="c-content__title">{{ i18n "speakerApplicationTitle" }}</h3>
+  <h4 class="c-application-form__subtitle">{{ i18n "speakerApplicationSubTitle1" }}</h4>
+  <input class="c-application-form__input" type="text" name="full-name" placeholder="{{ i18n "fullName" }}">
+  <input class="c-application-form__input" type="text" name="full-name" placeholder="{{ i18n "basedCity" }}">
+  <input class="c-application-form__input" type="email" name="email" placeholder="{{ i18n "email" }}">
+  <input class="c-application-form__input" type="text" name="personal-title" placeholder="{{ i18n "personalTitle" }}">
+  <input class="c-application-form__input" type="text" name="mobile" placeholder="{{ i18n "mobile" }}">
+  <input class="c-application-form__input" type="text" name="social-media" placeholder="{{ i18n "socialMedia" }}">
+  <input class="c-application-form__input" type="text" name="bio" placeholder="{{ i18n "bio" }}">
+  <input class="c-application-form__input" type="text" name="motivation" placeholder="{{ i18n "motivation" }}">
+  <div>headshot</div>
+  <h4 class="c-application-form__subtitle">{{ i18n "speakerApplicationSubTitle2" }}</h4>
+  <input class="c-application-form__input" type="text" name="talk-topic" placeholder="{{ i18n "talkTopic" }}">
+  <p class="c-application-form__instruction">{{ i18n "talkTopicInstruction" }}</p>
+  <input class="c-application-form__input" type="text" name="talk-desc" placeholder="{{ i18n "talkDesc" }}">
+  <p class="c-application-form__instruction">{{ i18n "talkDescInstruction" }}</p>
+  <input class="c-application-form__input" type="text" name="prev-talks" placeholder="{{ i18n "prevTalks" }}">
+  <p class="c-application-form__question">{{ i18n "willCompanySponsor" }}</p>
+  <input type="radio" id="yes" name="sponsorship" value="yes">
+  <label for="yes">Yes</label>
+  <input type="radio" id="no" name="sponsorship" value="no">
+  <label for="no">No</label>
+  <p class="c-application-form__question">{{ i18n "whatPresentationKind" }}</p>
+  <input type="radio" id="mainStage" name="presentation" value="mainStage">
+  <label for="mainStage">{{ i18n "mainStage" }}</label>
+  <input type="radio" id="keyNote" name="presentation" value="keyNote">
+  <label for="keyNote">{{ i18n "keyNote" }}</label>
+  <input type="radio" id="workshop" name="presentation" value="workshop">
+  <label for="workshop">{{ i18n "workshop" }}</label>
+</form>
