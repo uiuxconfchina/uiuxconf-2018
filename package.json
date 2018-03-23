@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "uiuxconf-2018",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "Website for 2018 UI/UX Chinese Conference",
+  "repository": "uiuxconfchina/uiuxconf-2018",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -11,7 +11,11 @@
     "start": "gulp server",
     "lint": "eslint src"
   },
-  "author": "",
+  "author": {
+    "name": "Wiredcraft",
+    "email": "info@wiredcraft.com",
+    "url": "https://github.com/Wiredcraft"
+  },
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^8.1.0",
