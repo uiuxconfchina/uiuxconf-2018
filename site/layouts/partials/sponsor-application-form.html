@@ -1,0 +1,51 @@
+<form class="c-application-form">
+  <div class="u-container">
+    <h3 class="c-content__title">{{ i18n "sponsorApplicationTitle" }}</h3>
+    <div class="c-application-form__wrapper">
+      <p class="c-content__paragraph c-application-form__paragraph">
+        {{ i18n "sponsorFormParagraph" }}
+        <a class="c-link" href="mailto:{{ i18n "infoMail" }}">{{ i18n "infoMail" }}</a>
+      </p>
+      <h4 class="c-application-form__subtitle">{{ i18n "fillInHere" }}</h4>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="contact-name" required="">
+        <label class="c-application-form__label">{{ i18n "contactName" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="company-name" required="">
+        <label class="c-application-form__label">{{ i18n "companyName" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="email" name="email" required="">
+        <label class="c-application-form__label">{{ i18n "email" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__field c-application-form__field_halfwidth">
+        <input class="c-application-form__input" type="text" name="phone-number" required="">
+        <label class="c-application-form__label">{{ i18n "phoneNumber" }}<span class="c-application-form__asterisk">*</span></label>
+      </div>
+      <div class="c-application-form__radio-field">
+        <p class="c-application-form__question">{{ i18n "sponsorLevel" }}<span class="c-application-form__asterisk">*</span></p>
+        <label class="c-application-form__radio c-application-form__radio_block">
+          <input type="radio" id="gold" name="sponsor-level" value="gold">
+          <label for="gold">{{ i18n "goldLevel" }}</label>
+          <span class="c-application-form__checkmark"></span>
+        </label>
+        <label class="c-application-form__radio c-application-form__radio_block">
+          <input type="radio" id="silver" name="sponsor-level" value="silver">
+          <label for="silver">{{ i18n "silverLevel" }}</label>
+          <span class="c-application-form__checkmark"></span>
+        </label>
+        <label class="c-application-form__radio c-application-form__radio_block">
+          <input type="radio" id="workshop" name="sponsor-level" value="bronze">
+          <label for="workshop">{{ i18n "bronzeLevel" }}</label>
+          <span class="c-application-form__checkmark"></span>
+        </label>
+      </div>
+      <div class="c-application-form__field">
+        <textarea class="c-application-form__input" rows="3" type="text" name="questions" required=""></textarea>
+        <label class="c-application-form__label">{{ i18n "questions" }}</label>
+      </div>
+      <button class="c-btn-primary c-application-form__btn" type="submit">{{ i18n "submit" }}</button>
+    </div>
+  </div>
+</form>

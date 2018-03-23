@@ -144,3 +144,29 @@ other = "Upload Headshot"
 other = "Minimum 1400 pixels wide"
 [upload]
 other = "Upload"
+[submit]
+other = "Submit"
+[sponsorApplicationTitle]
+other = "Sponsor Application Form"
+[sponsorFormParagraph]
+other = "If you are interested in sponsoring UI/UX Conf China 2018, please contact the organizers at "
+[infoMail]
+other = "info@uiuxconf.com"
+[fillInHere]
+other = "Fill the form here"
+[contactName]
+other = "Contact Name"
+[companyName]
+other = "Company Name"
+[phoneNumber]
+other = "Phone Number"
+[questions]
+other = "Questions/Comments (optional)"
+[sponsorLevel]
+other = "Sponsor Level"
+[goldLevel]
+other = "Gold (70,000)"
+[silverLevel]
+other = "Silver (50,000)"
+[bronzeLevel]
+other = "Bronze (35,000)"
