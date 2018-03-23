@@ -1,4 +1,6 @@
 // JS Goes here - ES6 supported
+import $ from "jquery";
+import slick from 'slick-carousel'
 
 const toggleMenu = () => {
   const menu = document.getElementById('menu')
@@ -25,9 +27,35 @@ const addToggleLanguageListener = () => {
   button.addEventListener('click', toggleLanguage)
 }
 
+const initializePartnersCarousel = () => {
+  $('#partners').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: 'unslick'
+      }
+    ]
+  })
+}
+
+const mediaQueryList = window.matchMedia('(min-width: 787px)')
+
+const checkResolution = (e) => {
+  e.matches ? initializePartnersCarousel() : null
+}
+
 const init = () => {
   addToggleMenuListener()
   addToggleLanguageListener()
+  initializePartnersCarousel()
+  mediaQueryList.addListener(checkResolution)
 }
 
 init()

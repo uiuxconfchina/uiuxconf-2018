@@ -1,8 +1,84 @@
 {{ partial "header" . }}
 {{ partial "hero-homepage" . }}
-
-<h1>{{ $.Site.Title }}</h1>
-
-<p>{{ i18n "test" }}</p>
-
+<section class="c-content">
+  <div class="c-content__section">
+    <div class="u-container u-container_wide u-text-right">
+      <div class="u-container">
+        <div class="c-content__text">
+          <h3 class="c-content__title">{{ i18n "homepageSection1Title" }}</h3>
+          <div class="c-content__wrapper">
+            <p class="c-content__paragraph">
+              {{ i18n "homepageSection1Paragraph1Part1" }}
+              <a class="c-content__link" href="#">{{ i18n "homepageSection1Paragraph1Link" }}</a>
+              {{ i18n "homepageSection1Paragraph1Part2" }}
+            </p>
+            <p class="c-content__paragraph c-content__paragraph_bottom">
+              {{ i18n "homepageSection1Paragraph2" }}
+              <span class="u-bold">{{ i18n "homepageSection1Paragraph2Strong" }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="c-content__media" src="./img/homepage/about.jpg" alt=""/>
+    </div>
+  </div>
+  <div class="c-content__section">
+    <div class="u-container u-container_wide">
+      <div class="u-container u-align-right">
+        <div class="c-content__text">
+          <h3 class="c-content__title">{{ i18n "homepageSection2Title" }}</h3>
+            <div class="c-content__wrapper">
+            <p class="c-content__paragraph">{{ i18n "homepageSection2Paragraph" }}</p>
+            <button class="c-btn-primary c-content__btn">{{ i18n "joinUs" }}</button>
+          </div>
+        </div>
+      </div>
+      <img class="c-content__media" src="./img/homepage/speaker.jpg" alt=""/>
+    </div>
+  </div>
+  <div class="c-content__section">
+    <div class="u-container u-container_wide u-text-right">
+      <div class="u-container">
+        <div class="c-content__text">
+          <h3 class="c-content__title">{{ i18n "homepageSection3Title" }}</h3>
+          <div class="c-content__wrapper">
+            <p class="c-content__paragraph">{{ i18n "homepageSection3Paragraph" }}</p>
+            <button class="c-btn-primary c-content__btn">{{ i18n "sponsorUs" }}</button>
+          </div>
+        </div>
+      </div>
+      <img class="c-content__media" src="./img/homepage/sponsor.jpg" alt=""/>
+    </div>
+  </div>
+  <div class="c-content__section">
+    <h3 class="c-content__title c-content__title_partners">{{ i18n "homepageSection4Title" }}</h3>
+    <div class="c-content__partners c-content__wrapper" id="partners">
+      <div class="c-content__partner c-content__partner_dribble"></div>
+      <div class="c-content__partner c-content__partner_sketch"></div>
+      <div class="c-content__partner c-content__partner_zcool"></div>
+      <div class="c-content__partner c-content__partner_cogs"></div>
+      <div class="c-content__partner c-content__partner_udacity"></div>
+      <div class="c-content__partner c-content__partner_phicomm"></div>
+      <div class="c-content__partner c-content__partner_proto"></div>
+      <div class="c-content__partner c-content__partner_feiyue"></div>
+      <div class="c-content__partner c-content__partner_sapient"></div>
+      <div class="c-content__partner c-content__partner_weltmeister"></div>
+      <div class="c-content__partner c-content__partner_mockingbot"></div>
+      <div class="c-content__partner c-content__partner_devteam"></div>
+    </div>
+  </div>
+  <div class="c-content__section">
+    <div class="u-container u-container_wide">
+      <img class="c-content__media" src="./img/homepage/organizer.jpg" alt=""/>
+      <div class="u-container u-align-right">
+        <div class="c-content__text">
+          <h3 class="c-content__title">{{ i18n "homepageSection5Title" }}</h3>
+          <div class="c-content__wrapper">
+            <p class="c-content__paragraph">{{ i18n "homepageSection5Paragraph" }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ partial "footer" . }}

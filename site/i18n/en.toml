@@ -54,3 +54,33 @@ other = "Be a speaker"
 other = "Be a sponsor"
 [ticket]
 other = "ticket"
+[homepageSection1Title]
+other = "ABOUT UI/UX CONF"
+[homepageSection1Paragraph1Part1]
+other = "The UI/UX Conf China is a community-driven design feast organized by Wiredcraft. Evolved from "
+[homepageSection1Paragraph1Link]
+other = "UIUX Designer Shanghai Meetup"
+[homepageSection1Paragraph1Part2]
+other = ", this two-day conference will feature 20+ speakers, 15+ talks, 2+ workshops focusing on design, tech and business."
+[homepageSection1Paragraph2]
+other = "The first UI/UX Conf in 2016 attracted over 1300 attendees from 43 countries. Join us at our 2nd edition on "
+[homepageSection1Paragraph2Strong]
+other = "September 1-2!"
+[homepageSection2Title]
+other = "BECOME A SPEAKER"
+[homepageSection2Paragraph]
+other = "Join us this September and speak at UI/UX Conf. Share your expertise and initiatives with creative professionals across China. To be considered for our conference speaker, simply complete the speaker application."
+[joinUs]
+other = "Join us"
+[homepageSection3Title]
+other = "BECOME A SPONSOR"
+[homepageSection3Paragraph]
+other = "UIUX Conf 2018 brings the community together and offers companies a platform to connect, communicate, and cooperate. We expect over 1000 professionals to join us this year. Our attendees spread across many design disciplines that include interaction design, user experience, product management, digital academia and more. "
+[sponsorUs]
+other = "Sponsor us"
+[homepageSection4Title]
+other = "PREVIOUS PARTNERS"
+[homepageSection5Title]
+other = "THE ORGANIZER"
+[homepageSection5Paragraph]
+other = "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other, Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other"

@@ -89,7 +89,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./dist/*.js", ["minifyJS"]);
+  gulp.watch("./dist/*.js", ["compressJS"]);
   gulp.watch("./dist/**/*.html", ["compressHTML"]);
   gulp.watch("./src/css/**/*.sass", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
