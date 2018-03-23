@@ -3,9 +3,11 @@
 
 .c-content
   text-align: left
+  @media all and (min-width: 48em)
+    padding: 9.3vh 0
   &__section
     @media all and (min-width: 48em)
-      padding: 18.5vh 0
+      padding: 9.3vh 0
   &__text
     text-align: left
     @media all and (min-width: 48em)
@@ -57,12 +59,44 @@
         max-width: 790px
   &__partners
     display: flex
-    flex-direction: column
+    flex-wrap: wrap
+    @media all and (min-width: 48em)
+      margin-top: 9vh
+      display: block
   &__partner
-    width: 150px
-    height: 35px
+    width: 50%
+    height: 60px
+    margin: 10px 0
     background-repeat: no-repeat
     background-position: center
     background-size: contain
+    @media all and (min-width: 48em)
+      width: 15.2vw
+      height: 5.3vw
+      display: inline-block
+    &_dribble
+      background-image: url("../img/partners/dribble.png")
+    &_sketch
+      background-image: url("../img/partners/sketch.png")
+    &_zcool
+      background-image: url("../img/partners/zcool.png")
+    &_cogs
+      background-image: url("../img/partners/cogs.png")
+    &_udacity
+      background-image: url("../img/partners/udacity.png")
+    &_phicomm
+      background-image: url("../img/partners/phicomm.png")
+    &_proto
+      background-image: url("../img/partners/proto.png")
+    &_feiyue
+      background-image: url("../img/partners/feiyue.png")
+    &_sapient
+      background-image: url("../img/partners/sapient.png")
+    &_weltmeister
+      background-image: url("../img/partners/weltmeister.png")
+    &_mockingbot
+      background-image: url("../img/partners/mockingbot.png")
+    &_devteam
+      background-image: url("../img/partners/devteam.png")
   .u-container_wide
     position: relative
