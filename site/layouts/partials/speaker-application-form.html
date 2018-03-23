@@ -15,12 +15,18 @@
   <p class="c-application-form__instruction">{{ i18n "talkTopicInstruction" }}</p>
   <input class="c-application-form__input" type="text" name="talk-desc" placeholder="{{ i18n "talkDesc" }}">
   <p class="c-application-form__instruction">{{ i18n "talkDescInstruction" }}</p>
+  <ul class="c-application-form__instruction">
+    <li>{{ i18n "talkDescInstructionList1" }}</li>
+    <li>{{ i18n "talkDescInstructionList2" }}</li>
+    <li>{{ i18n "talkDescInstructionList3" }}</li>
+    <li>{{ i18n "talkDescInstructionList4" }}</li>
+  </ul>
   <input class="c-application-form__input" type="text" name="prev-talks" placeholder="{{ i18n "prevTalks" }}">
   <p class="c-application-form__question">{{ i18n "willCompanySponsor" }}</p>
   <input type="radio" id="yes" name="sponsorship" value="yes">
-  <label for="yes">Yes</label>
+  <label for="yes">{{ i18n "yes" }}</label>
   <input type="radio" id="no" name="sponsorship" value="no">
-  <label for="no">No</label>
+  <label for="no">{{ i18n "no" }}</label>
   <p class="c-application-form__question">{{ i18n "whatPresentationKind" }}</p>
   <input type="radio" id="mainStage" name="presentation" value="mainStage">
   <label for="mainStage">{{ i18n "mainStage" }}</label>
