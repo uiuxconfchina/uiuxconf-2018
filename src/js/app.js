@@ -45,10 +45,17 @@ const initializePartnersCarousel = () => {
   })
 }
 
+const mediaQueryList = window.matchMedia('(min-width: 787px)')
+
+const checkResolution = (e) => {
+  e.matches ? initializePartnersCarousel() : null
+}
+
 const init = () => {
   addToggleMenuListener()
   addToggleLanguageListener()
   initializePartnersCarousel()
+  mediaQueryList.addListener(checkResolution)
 }
 
 init()
