@@ -3,32 +3,32 @@
     <h3 class="c-content__title">{{ i18n "speakerApplicationTitle" }}</h3>
     <div class="c-application-form__wrapper">
       <h4 class="c-application-form__subtitle">{{ i18n "speakerApplicationSubTitle1" }}</h4>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="text" name="full-name" required="">
         <label class="c-application-form__label">{{ i18n "fullName" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="text" name="based-city" required="">
         <label class="c-application-form__label">{{ i18n "basedCity" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="email" name="email" required="">
         <label class="c-application-form__label">{{ i18n "email" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="text" name="personal-title" required="">
         <label class="c-application-form__label">{{ i18n "personalTitle" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="text" name="mobile" required="">
         <label class="c-application-form__label">{{ i18n "mobile" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
-      <div class="c-application-form__field">
+      <div class="c-application-form__field c-application-form__field_halfwidth">
         <input class="c-application-form__input" type="text" name="social-media" required="">
         <label class="c-application-form__label">{{ i18n "socialMedia" }}</label>
       </div>
       <div class="c-application-form__field">
-        <input class="c-application-form__input" type="text" name="bio" required="">
+        <textarea class="c-application-form__input" rows="3" type="text" name="bio" required=""></textarea>
         <label class="c-application-form__label">{{ i18n "bio" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__field">
@@ -37,9 +37,13 @@
       </div>
       <div class="c-application-form__upload-field">
         <div class="c-application-form__avatar"></div>
-        <p class="c-application-form__question c-application-form__question_upload">{{ i18n "uploadHeadshot" }}<span class="c-application-form__asterisk">*</span></p>
-        <p class="c-application-form__instruction">{{ i18n "headshotInstruction" }}</p>
-        <button class="c-btn-primary c-application-form__btn">{{ i18n "upload" }}</button>
+        <div class="c-application-form__upload-instruction">
+          <div>
+            <p class="c-application-form__question c-application-form__question_upload">{{ i18n "uploadHeadshot" }}<span class="c-application-form__asterisk">*</span></p>
+            <p class="c-application-form__instruction">{{ i18n "headshotInstruction" }}</p>
+          </div>
+          <button class="c-btn-primary c-application-form__btn">{{ i18n "upload" }}</button>
+        </div>
       </div>
       <h4 class="c-application-form__subtitle">{{ i18n "speakerApplicationSubTitle2" }}</h4>
       <div class="c-application-form__field">
@@ -48,7 +52,7 @@
       </div>
       <p class="c-application-form__instruction">{{ i18n "talkTopicInstruction" }}</p>
         <div class="c-application-form__field">
-        <input class="c-application-form__input" type="text" name="talk-desc" required="">
+        <textarea class="c-application-form__input" rows="3" type="text" name="talk-desc" required=""></textarea>
         <label class="c-application-form__label">{{ i18n "talkDesc" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <p class="c-application-form__instruction">{{ i18n "talkDescInstruction" }}</p>
