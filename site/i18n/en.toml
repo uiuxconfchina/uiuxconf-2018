@@ -138,3 +138,9 @@ other = "Main stage talk: 30-minute presentation, 1000+ audience"
 other = "Keynote talk: 45-minute presentation, 1000+ audience"
 [workshop]
 other = "Workshop: 3-hour workshop, half-day courses that delve deep into specific topics, often with hands-on exercises for participants to develop practical skills"
+[uploadHeadshot]
+other = "Upload Headshot"
+[headshotInstruction]
+other = "Minimum 1400 pixels wide"
+[upload]
+other = "Upload"

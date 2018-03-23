@@ -1,3 +1,105 @@
 @import "variables"
 @import "fonts"
 
+.c-application-form
+  background-color: #f7f7f7
+  padding: 0 0 32px
+  text-align: left
+  @media all and (min-width: 48em)
+    padding: 14vh 0
+  &__wrapper
+    padding: 0 16px
+  &__subtitle
+    font-size: 1rem
+    line-height: 1.5
+    margin: 0 0 16px
+    @media all and (min-width: 48em)
+      margin-bottom: 32px
+      font-size: 2.3
+  &__btn
+    margin-top: 40px
+  &__field
+    position: relative
+    margin: 16px 0
+    @media all and (min-width: 48em)
+      margin-bottom: 32px
+    input:valid ~ .c-application-form__label,
+    input:focus ~ .c-application-form__label,
+    textarea:valid ~ .c-application-form__label,
+    textarea:focus ~ .c-application-form__label
+      top: -10px
+      font-size: 0.75rem
+      font-family: MuseoSlab500, serif
+  &__btn
+    margin-top: 16px
+  &__upload-field
+    margin-top: 16px
+    margin-bottom: 40px
+    @media all and (min-width: 48em)
+      margin-bottom: 80px
+  &__avatar
+    width: 200px
+    height: 200px
+    background: url("../img/avatar.png") no-repeat center
+    background-size: 52% 52%
+    background-color: #ffffff
+  &__input,
+  &__question,
+  &__radio,
+  &__label
+    font-family: MuseoSlab300, serif
+    font-size: 0.875rem
+    line-height: 1.2
+  &__question
+    &_upload
+      margin-bottom: 0
+  &__label
+    position: absolute
+    top: 10px
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+    pointer-events: none
+  &__input
+    width: 100%
+    border: 0
+    border-bottom: 1px solid rgba($text-color, .5)
+    -webkit-appearance: none
+    background-color: transparent
+    padding: 10px 0
+    &:focus
+      outline: none
+  &__asterisk
+    color: $link-color
+  &__instruction
+    font-size: 0.875rem
+    color: $text-color-light
+    line-height: 1.5
+    margin: 0
+    &_list
+      padding-left: 20px
+      margin-top: 0
+  &__radio
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    user-select: none
+    line-height: 1.5
+    input
+      position: absolute
+      opacity: 0
+      cursor: pointer
+    input:checked ~ .c-application-form__checkmark
+        background-color: #3731bc
+    &_block
+      display: block
+    &_inline
+      margin-right: 15px
+  &__checkmark
+    position: absolute
+    top: 0
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: #ffffff
+    border: 1px solid $text-color
+    border-radius: 50%
