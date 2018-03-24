@@ -1,0 +1,103 @@
+@import "variables"
+@import "fonts"
+
+.c-callforspeaker
+  .c-content__title
+    @media all and (min-width: 48em)
+      padding-bottom: 5.6vh
+  .c-content__wrapper
+    @media all and (min-width: 48em)
+      padding-bottom: 0
+  &__types
+    @media all and (min-width: 48em)
+      display: flex
+  &__icon
+    width: 80px
+    height: 80px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    margin: 0 auto 24px
+    flex-shrink: 0
+    @media all and (min-width: 48em)
+      margin-bottom: 48px
+    &_keynote
+      background-image: url("../img/callforspeaker/keynote.png")
+    &_mainstage
+      background-image: url("../img/callforspeaker/mainstage.png")
+    &_workshop
+      background-image: url("../img/callforspeaker/workshop.png")
+    &_ticket
+      background-image: url("../img/callforspeaker/ticket.png")
+    &_photo
+      background-image: url("../img/callforspeaker/photo.png")
+    &_flight
+      background-image: url("../img/callforspeaker/flight.png")
+    &_dinner
+      background-image: url("../img/callforspeaker/dinner.png")
+  &__desc
+    font-family: 'MuseoSlab900', serif
+    text-align: center
+    letter-spacing: 2px
+  &__event
+    display: flex
+    align-items: center
+    padding: 16px 0
+    border-bottom: 1px solid #979797
+    line-height: 1.5
+    &:last-of-type
+      border-bottom: 0
+    @media all and (min-width: 48em)
+      padding: 30px 0
+  &__date
+    font-size: 1.25rem
+    min-width: 88px
+    line-height: 0.9
+    @media all and (min-width: 48em)
+      font-size: 3.7vh
+      min-width: 20%
+  &__topics
+    font-family: MuseoSlab900, serif
+    text-align: center
+    margin-top: 30px
+    @media all and (min-width: 48em)
+      margin-top: 6.9vh
+      text-align: left
+      display: flex
+      justify-content: space-between
+  &__category-title
+    font-size: 1rem
+    letter-spacing: 2px
+    @media all and (min-width: 48em)
+      font-size: 1.25rem
+  &__topic
+    font-size: 0.875rem
+    line-height: 2.5
+    @media all and (min-width: 48em)
+      font-size: 1rem
+  &__topic-list
+    list-style: none
+    padding-left: 0
+  &__perks
+    text-align: left
+    display: flex
+    flex-direction: column
+    @media all and (min-width: 48em)
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+    .c-callforspeaker__desc
+      font-family: 'MuseoSlab500', serif
+      text-align: left
+      margin: 0
+    .c-callforspeaker__icon
+      margin: 0 16px 0 0
+      @media all and (min-width: 48em)
+        margin: 0 30px 0 0
+  &__perk
+    display: flex
+    align-items: flex-start
+    margin: 24px 0 0
+    @media all and (min-width: 48em)
+      width: 50%
+      margin: 48px 0 0
