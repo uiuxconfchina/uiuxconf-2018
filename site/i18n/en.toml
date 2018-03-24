@@ -178,3 +178,121 @@ other = "Organization"
 other = "Mobile (Optional)"
 [applyForAccreditation]
 other = "Apply for media accreditation"
+[speakerSection1Title]
+other = "Speaking at UI/UX Conf China"
+[speakerSection1Paragraph1]
+other = "We welcome the perspectives of design professionals, product managers, design-aware technologists, innovators, entrepreneurs, and anyone who plays a role in creating products or services. If you know someone who belongs on the stage, or if you belong there yourself, we want to hear from you! <a class=\"c-link\" href=\"#\">Please use our speaker nomination form</a>."
+[speakerSection1Paragraph2]
+other = "The UI/UX Conf China is a community-driven design feast organized by Wiredcraft. Evolved from <a class=\"c-link\" href=\"#\">UIUX Designer Shanghai Meetup</a>, this two-day conference will feature 20 speakers, 16 talks, 4 workshops focusing on design, tech and business."
+[speakerSection1Paragraph3]
+other = "The first UIUX Conf in 2016 attracted over <span class=\"u-bold\">1300 attendees</span> from <span class=\"u-bold\">43 countries</span>. <span class=\"u-bold\">Join us at our 2nd edition on September 1-2!</span>"
+[speakerSection2Title]
+other = "An ideal speaker"
+[speakerSection2List1]
+other = "<span class=\"u-bold\">Experienced</span> and <span class=\"u-bold\">comfortable speaker</span> in front of large groups"
+[speakerSection2List2]
+other = "At least <span class=\"u-bold\">4 years experience</span> in design or product field"
+[speakerSection2List3]
+other = "Deliver <span class=\"u-bold\">original and fresh content</span> for this event"
+[speakerSection2List4]
+other = "Sharing <span class=\"u-bold\">expertise, real-world strategies and knowledge</span> with other creative professionals"
+[speakerSection2List5]
+other = "Is interested, <span class=\"u-bold\">schedule permitting</span>, in attending the whole event and engaging with attendees"
+[speakerSection2List6]
+other = "Is open to helping <span class=\"u-bold\">spread the word about the conference</span>"
+[speakerSection2List7]
+other = "Keeps proposals <span class=\"u-bold\">free of marketing and sales</span>."
+[speakerSection3Title]
+other = "Speaker types"
+[speakerTypeDesc1]
+other = "Keynote talk:<br/>45 mins, 1000+ audiences"
+[speakerTypeDesc2]
+other = "Main stage talk:<br/>30mins, 1000+ audience"
+[speakerTypeDesc3]
+other = "Workshop:<br/>2-3 hours, 30-60 audience"
+[speakerSection4Title]
+other = "Important dates"
+[speakerSection4Date1]
+other = "April 3"
+[speakerSection4Event1]
+other = "Speaker application starts"
+[speakerSection4Date2]
+other = "April 15"
+[speakerSection4Event2]
+other = "Confirm the first batch of 5 speakers"
+[speakerSection4Date3]
+other = "May 18"
+[speakerSection4Event3]
+other = "Confirm the second batch of 5 speakers"
+[speakerSection4Date4]
+other = "May 31"
+[speakerSection4Event4]
+other = "Speaker application ends"
+[speakerSection4Date5]
+other = "June 15"
+[speakerSection4Event5]
+other = "All proposers notified"
+[speakerSection4Date6]
+other = "June 29"
+[speakerSection4Event6]
+other = "Release the full list of speakers and workshops"
+[speakerSection5Title]
+other = "Suggested topics"
+[speakerSection5Paragraph1]
+other = "Here are a few areas that we find relevant and worth exploring; proposals are invited on—but not limited to—these topics. Please feel free to suggest other ideas; surprise us with your unique perspective."
+[speakerCategory1]
+other = "Product"
+[speakerCategory1Topic1]
+other = "Experience Design"
+[speakerCategory1Topic2]
+other = "Interface/visual"
+[speakerCategory1Topic3]
+other = "Physical Design"
+[speakerCategory1Topic4]
+other = "Service Design"
+[speakerCategory2]
+other = "Strategy"
+[speakerCategory2Topic1]
+other = "Innovation"
+[speakerCategory2Topic2]
+other = "Data Science"
+[speakerCategory2Topic3]
+other = "Branding"
+[speakerCategory2Topic4]
+other = "Research"
+[speakerCategory3]
+other = "Technology"
+[speakerCategory3Topic1]
+other = "AR/VR/MR"
+[speakerCategory3Topic2]
+other = "New media art"
+[speakerCategory3Topic3]
+other = "IoT"
+[speakerCategory3Topic4]
+other = "Creative engineering"
+[speakerCategory4]
+other = "Approaches"
+[speakerCategory4Topic1]
+other = "Tools/platforms"
+[speakerCategory4Topic2]
+other = "Design system"
+[speakerCategory4Topic3]
+other = "Design critiques"
+[speakerCategory4Topic4]
+other = "Design management"
+[speakerSection6Title]
+other = "The perks"
+[speakerSection6Paragraph1]
+other = "If you get selected as a speaker at UI/UX 2018, here’s what you’ll get:"
+[speakerPerk1]
+other = "Conference ticket & After party entrance"
+[speakerPerk2]
+other = "Professional Photography & Video of Your Talk"
+[speakerPerk3]
+other = "Flight and accommodation during the conference"
+[speakerPerk4]
+other = "Speaker Dinner"
+[speakerSection7Title]
+other = "Contact"
+[speakerSection7Paragraph1]
+other = "Fill out the <a class=\"c-link\" href=\"callforspeaker#form\">application form</a> and submit, if you have any question regarding submission requirements or process, please contact <a class=\"c-link\" href=\"mailto:coco@wiredcraft.com\">coco@wiredcraft.com</a>."

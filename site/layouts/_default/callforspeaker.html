@@ -1,4 +1,186 @@
 {{ partial "header" . }}
 {{ partial "hero-callforspeaker" . }}
-{{ partial "speaker-application-form" }}
+<section class="c-content c-callforspeaker">
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection1Title" }}</h3>
+        <div class="c-content__wrapper">
+          <p class="c-content__paragraph">
+            {{ i18n "speakerSection1Paragraph1" | safeHTML }}
+          </p>
+          <p class="c-content__paragraph c-content__paragraph_bottom">
+            {{ i18n "speakerSection1Paragraph2" | safeHTML }}
+          </p>
+          <p class="c-content__paragraph c-content__paragraph_bottom">
+            {{ i18n "speakerSection1Paragraph3" | safeHTML }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection2Title" }}</h3>
+        <div class="c-content__wrapper">
+          <ul class="c-content__paragraph c-content__list">
+            <li class="c-content__list-item">{{ i18n "speakerSection2List1" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List2" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List3" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List4" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List5" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List6" | safeHTML }}</li>
+            <li class="c-content__list-item">{{ i18n "speakerSection2List7" | safeHTML }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection3Title" }}</h3>
+      <div class="c-content__wrapper">
+        <div class="c-callforspeaker__types c-content__paragraph">
+          <div class="c-callforspeaker__type">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_keynote"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerTypeDesc1" | safeHTML }}</p>
+          </div>
+          <div class="c-callforspeaker__type">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_mainstage"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerTypeDesc2" | safeHTML }}</p>
+          </div>
+          <div class="c-callforspeaker__type">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_workshop"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerTypeDesc3"| safeHTML }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection4Title" }}</h3>
+        <div class="c-content__wrapper">
+          <div class="c-content__paragraph">
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date1"}}</span>
+              <span>{{ i18n "speakerSection4Event1" }}</span>
+            </div>
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date2"}}</span>
+              <span>{{ i18n "speakerSection4Event2" }}</span>
+            </div>
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date3"}}</span>
+              <span>{{ i18n "speakerSection4Event3" }}</span>
+            </div>
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date4"}}</span>
+              <span>{{ i18n "speakerSection4Event4" }}</span>
+            </div>
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date5"}}</span>
+              <span>{{ i18n "speakerSection4Event5" }}</span>
+            </div>
+            <div class="c-callforspeaker__event">
+              <span class="c-callforspeaker__date">{{ i18n "speakerSection4Date6"}}</span>
+              <span>{{ i18n "speakerSection4Event6" }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection5Title" }}</h3>
+        <div class="c-content__wrapper">
+          <p class="c-content__paragraph">
+            {{ i18n "speakerSection5Paragraph1" }}
+          </p>
+          <div class="c-callforspeaker__topics">
+            <div class="c-callforspeaker__category">
+              <h5 class="c-callforspeaker__category-title">{{ i18n "speakerCategory1" }}</h5>
+              <ul class="c-callforspeaker__topic-list">
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory1Topic1" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory1Topic2" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory1Topic3" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory1Topic4" }}</li>
+                <li class="c-callforspeaker__topic">..</li>
+              </ul>
+            </div>
+            <div class="c-callforspeaker__category">
+              <h5 class="c-callforspeaker__category-title">{{ i18n "speakerCategory2" }}</h5>
+              <ul class="c-callforspeaker__topic-list">
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory2Topic1" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory2Topic2" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory2Topic3" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory2Topic4" }}</li>
+                <li class="c-callforspeaker__topic">..</li>
+              </ul>
+            </div>
+            <div class="c-callforspeaker__category">
+              <h5 class="c-callforspeaker__category-title">{{ i18n "speakerCategory3" }}</h5>
+              <ul class="c-callforspeaker__topic-list">
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory3Topic1" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory3Topic2" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory3Topic3" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory3Topic4" }}</li>
+                <li class="c-callforspeaker__topic">..</li>
+              </ul>
+            </div>
+            <div class="c-callforspeaker__category">
+              <h5 class="c-callforspeaker__category-title">{{ i18n "speakerCategory4" }}</h5>
+              <ul class="c-callforspeaker__topic-list">
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory4Topic1" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory4Topic2" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory4Topic3" }}</li>
+                <li class="c-callforspeaker__topic">{{ i18n "speakerCategory4Topic4" }}</li>
+                <li class="c-callforspeaker__topic">..</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection6Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "speakerSection6Paragraph1" }}
+        </p>
+        <div class="c-callforspeaker__perks c-content__paragraph">
+          <div class="c-callforspeaker__perk">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_ticket"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerPerk1" }}</p>
+          </div>
+          <div class="c-callforspeaker__perk">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_photo"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerPerk2" }}</p>
+          </div>
+          <div class="c-callforspeaker__perk">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_flight"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerPerk3" }}</p>
+          </div>
+          <div class="c-callforspeaker__perk">
+            <div class="c-callforspeaker__icon c-callforspeaker__icon_dinner"></div>
+            <p class="c-callforspeaker__desc">{{ i18n "speakerPerk4" }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "speakerSection7Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "speakerSection7Paragraph1" | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="form">{{ partial "speaker-application-form" }}</section>
 {{ partial "footer" . }}
