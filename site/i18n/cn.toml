@@ -82,3 +82,98 @@ other = "PREVIOUS PARTNERS"
 other = "THE ORGANIZER"
 [homepageSection5Paragraph]
 other = "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other, Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other"
+[speakerApplicationTitle]
+other = "Speaker Application Form"
+[speakerApplicationSubTitle1]
+other = "About you"
+[fullName]
+other = "Full Name"
+[basedCity]
+other = "Current Based City"
+[email]
+other = "Email"
+[personalTitle]
+other = "Title"
+[mobile]
+other = "Mobile"
+[socialMedia]
+other = "Social Media (Optional)"
+[bio]
+other = "A Short Bio"
+[motivation]
+other = "In 100-200 words, tell us why you think you’d be a great speaker at our conference?"
+[speakerApplicationSubTitle2]
+other = "About talk"
+[talkTopic]
+other = "Talk Topic"
+[talkTopicInstruction]
+other = "Mention 1 or more topics within your industry that you would be interested speaking on. Instead of mentioning a general topic, please state a particular viewpoint. For example, rather than just stating \"user research\", it's better to be more specific and say \"how to level up user research in omni-channel strategy\""
+[talkDesc]
+other = "Talk Description"
+[talkDescInstruction]
+other = "Make sure your answer covers these question"
+[talkDescInstructionList1]
+other = "What is the topic and why is it important to designers?"
+[talkDescInstructionList2]
+other = "What information or skills will the attendee gain from attending your session?"
+[talkDescInstructionList3]
+other = "List 3 key takeaways for attendees"
+[talkDescInstructionList4]
+other = "Prerequisite knowledge or requirements needed for attendees"
+[prevTalks]
+other = "Link(s) of previous talks you’ve delivered in public (optional)"
+[willCompanySponsor]
+other = "Will your company sponsor your trip to UI/UX Conf China 18?"
+[yes]
+other = "Yes"
+[no]
+other = "No"
+[whatPresentationKind]
+other = "Choose the type of presentation that you would like to be considered"
+[mainStage]
+other = "Main stage talk: 30-minute presentation, 1000+ audience"
+[keyNote]
+other = "Keynote talk: 45-minute presentation, 1000+ audience"
+[workshop]
+other = "Workshop: 3-hour workshop, half-day courses that delve deep into specific topics, often with hands-on exercises for participants to develop practical skills"
+[uploadHeadshot]
+other = "Upload Headshot"
+[headshotInstruction]
+other = "Minimum 1400 pixels wide"
+[upload]
+other = "Upload"
+[submit]
+other = "Submit"
+[sponsorApplicationTitle]
+other = "Sponsor Application Form"
+[sponsorFormParagraph]
+other = "If you are interested in sponsoring UI/UX Conf China 2018, please contact the organizers at "
+[infoMail]
+other = "info@uiuxconf.com"
+[fillInHere]
+other = "Fill the form here"
+[contactName]
+other = "Contact Name"
+[companyName]
+other = "Company Name"
+[phoneNumber]
+other = "Phone Number"
+[questions]
+other = "Questions/Comments (optional)"
+[sponsorLevel]
+other = "Sponsor Level"
+[goldLevel]
+other = "Gold (70,000)"
+[silverLevel]
+other = "Silver (50,000)"
+[bronzeLevel]
+other = "Bronze (35,000)"
+[yourFullName]
+other = "Your Full Name"
+[organization]
+other = "Organization"
+[mobileOptional]
+other = "Mobile (Optional)"
+[applyForAccreditation]
+other = "Apply for media accreditation"
+
