@@ -1,4 +1,23 @@
 {{ partial "header" . }}
 {{ partial "hero-callforsponsor" . }}
+<section class="c-content">
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "sponsorSection1Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "sponsorSection1Paragraph1"}}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "sponsorSection1Paragraph2"}}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "sponsorSection1Paragraph3"}}
+        </p>
+        <button class="c-btn-primary c-content__btn c-btn-primary_wide">{{ i18n "downloadSponsor" }}</button>
+      </div>
+    </div>
+  </div>
+</section>
 {{ partial "sponsor-application-form" }}
 {{ partial "footer" . }}

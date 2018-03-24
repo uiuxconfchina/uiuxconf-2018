@@ -294,3 +294,13 @@ other = "Speaker Dinner"
 other = "Contact"
 [speakerSection7Paragraph1]
 other = "Fill out the <a class=\"c-link\" href=\"callforspeaker#form\">application form</a> and submit, if you have any question regarding submission requirements or process, please contact <a class=\"c-link\" href=\"mailto:coco@wiredcraft.com\">coco@wiredcraft.com</a>."
+[sponsorSection1Title]
+other = "Sponsorship package"
+[sponsorSection1Paragraph1]
+other = "We are currently seeking partners who want to support our efforts. Help us to maintain a low cost for all attendees and create an inclusive experience for the community."
+[sponsorSection1Paragraph2]
+other = "By partnering with us, you’ll gain powerful exposure for your brand, broad access to the community, and visibility as a leader in the industry."
+[sponsorSection1Paragraph3]
+other = "For more sponsorship details, please download the Sponsorship Package."
+[downloadSponsor]
+other = "Download sponsor package"
