@@ -43,6 +43,9 @@ a
 .u-bold
   font-family: 'MuseoSlab900', serif
 
+.u-no-scroll
+  overflow: hidden
+
 .c-btn-primary
   font-family: 'MuseoSlab500', serif
   background-color: $primary-color
@@ -64,3 +67,33 @@ a
 .c-link
   font-family: 'MuseoSlab500', serif
   color: $link-color
+
+.c-social-media
+  margin: 32px auto 0
+  display: flex
+  width: 250px
+  justify-content: space-between
+  @media all and (min-width: 48em)
+    margin-left: 0
+    margin-right: 0
+    width: 350px
+    margin-top: 46px
+  &_mini
+    width: 180px
+  &__item
+    width: 35px
+    height: 35px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    cursor: pointer
+    &_wechat
+      background-image: url('../img/social-media/wechat.png')
+    &_instagram
+      background-image: url('../img/social-media/instagram.png')
+    &_weibo
+      background-image: url('../img/social-media/weibo.png')
+    &_twitter
+      background-image: url('../img/social-media/twitter.png')
+    &_facebook
+      background-image: url('../img/social-media/facebook.png')
