@@ -3,12 +3,27 @@ import $ from 'jquery'
 import slick from 'slick-carousel'
 import './sponsorForm'
 
+const showMenu = (menu, button) => {
+  menu.classList.remove('u-hidden')
+  button.classList.add('c-navbar__toggle_close')
+  button.classList.remove('c-navbar__toggle_hamburger')
+  document.getElementById('socialMediaNav').style.display = 'flex'
+}
+
+const hideMenu = (menu, button) => {
+  menu.classList.add('u-hidden')
+  button.classList.add('c-navbar__toggle_hamburger')
+  button.classList.remove('c-navbar__toggle_close')
+  document.getElementById('socialMediaNav').style.display = 'none'
+}
+
 const toggleMenu = () => {
   const menu = document.getElementById('menu')
   const button = document.getElementById('menuToggle')
   menu.classList.contains('u-hidden')
-    ? (menu.classList.remove('u-hidden'), button.classList.add('c-navbar__toggle_close'), button.classList.remove('c-navbar__toggle_hamburger'))
-    : (menu.classList.add('u-hidden'), button.classList.add('c-navbar__toggle_hamburger'), button.classList.remove('c-navbar__toggle_close'))
+    ? showMenu(menu, button)
+    : hideMenu(menu, button)
+  document.body.classList.toggle('u-no-scroll')
 }
 
 const addToggleMenuListener = () => {
