@@ -1,6 +1,7 @@
 import $ from 'jquery'
 // eslint-disable-next-line
 import slick from 'slick-carousel'
+import './sponsorForm'
 
 const toggleMenu = () => {
   const menu = document.getElementById('menu')

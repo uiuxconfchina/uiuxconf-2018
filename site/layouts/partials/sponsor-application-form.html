@@ -1,4 +1,4 @@
-<form class="c-application-form">
+<form class="c-application-form" id="sponsor-application-form">
   <div class="u-container">
     <h3 class="c-content__title">{{ i18n "sponsorApplicationTitle" }}</h3>
     <div class="c-application-form__wrapper">
@@ -26,7 +26,7 @@
       <div class="c-application-form__radio-field">
         <p class="c-application-form__question">{{ i18n "sponsorLevel" }}<span class="c-application-form__asterisk">*</span></p>
         <label class="c-application-form__radio c-application-form__radio_block">
-          <input type="radio" id="gold" name="sponsor-level" value="gold">
+          <input type="radio" id="gold" name="sponsor-level" value="gold" checked>
           <label for="gold">{{ i18n "goldLevel" }}</label>
           <span class="c-application-form__checkmark"></span>
         </label>
@@ -42,7 +42,7 @@
         </label>
       </div>
       <div class="c-application-form__field">
-        <textarea class="c-application-form__input" rows="3" type="text" name="questions" required=""></textarea>
+        <textarea class="c-application-form__input" rows="3" type="text" name="questions"></textarea>
         <label class="c-application-form__label">{{ i18n "questions" }}</label>
       </div>
       <button class="c-btn-primary c-application-form__btn" type="submit">{{ i18n "submit" }}</button>
