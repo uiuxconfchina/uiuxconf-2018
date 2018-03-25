@@ -42,7 +42,7 @@
         </label>
       </div>
       <div class="c-application-form__field">
-        <textarea class="c-application-form__input" rows="3" type="text" name="questions"></textarea>
+        <textarea class="c-application-form__input" rows="3" type="text" name="questions" value="" onkeyup="this.setAttribute('value', this.value);"></textarea>
         <label class="c-application-form__label">{{ i18n "questions" }}</label>
       </div>
       <button class="c-btn-primary c-application-form__btn" type="submit">{{ i18n "submit" }}</button>
