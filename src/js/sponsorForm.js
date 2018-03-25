@@ -53,7 +53,7 @@ import {createSponsor} from './api'
     evt.preventDefault()
     createSponsor(sponsorForm.getPayload())
       .done(() => {
-        // TODO: model
+        // TODO: modal
         alert('Success')
         sponsorForm.setBackToDefault()
       })
