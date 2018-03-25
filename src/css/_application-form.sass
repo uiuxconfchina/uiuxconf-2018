@@ -24,10 +24,12 @@
     margin: 16px 0
     @media all and (min-width: 48em)
       margin-bottom: 18px
-    input:valid ~ .c-application-form__label,
+    input:required:valid ~ .c-application-form__label,
     input:focus ~ .c-application-form__label,
-    textarea:valid ~ .c-application-form__label,
-    textarea:focus ~ .c-application-form__label
+    textarea:required:valid ~ .c-application-form__label,
+    textarea:focus ~ .c-application-form__label,
+    input:optional:not([value=""]) ~ .c-application-form__label,
+    textarea:optional:not([value=""]) ~ .c-application-form__label,
       top: -10px
       font-size: 0.75rem
       font-family: MuseoSlab500, serif
@@ -129,4 +131,3 @@
     margin-bottom: 24px
     @media all and (min-width: 48em)
       margin-bottom: 5.6vh
-
