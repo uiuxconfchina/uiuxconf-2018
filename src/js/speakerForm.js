@@ -1,5 +1,5 @@
-import {getElemInScope} from './utils'
-import {createSpeaker, uploadImg} from './api'
+import {getElemInScope, formatSpeakerPayload} from './utils'
+import {postToZapier, uploadImg} from './api'
 import uuid from 'uuid/v4'
 
 (() => {
@@ -123,7 +123,7 @@ import uuid from 'uuid/v4'
   speakerForm.form.submit((evt) => {
     evt.preventDefault()
 
-    createSpeaker({...speakerForm.getPayload(), headshot: speakerForm.headshotLink})
+    postToZapier(formatSpeakerPayload({...speakerForm.getPayload(), headshot: speakerForm.headshotLink}))
       .done(() => {
         alert('Success')
         speakerForm.setBackToDefault()
