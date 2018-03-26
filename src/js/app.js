@@ -27,7 +27,7 @@ const toggleMenu = () => {
 
 const addToggleMenuListener = () => {
   const button = document.getElementById('menuToggle')
-  button.addEventListener('click', toggleMenu)
+  button && button.addEventListener('click', toggleMenu)
 }
 
 const toggleLanguage = () => {
@@ -39,7 +39,7 @@ const toggleLanguage = () => {
 
 const addToggleLanguageListener = () => {
   const button = document.getElementById('langToggle')
-  button.addEventListener('click', toggleLanguage)
+  button && button.addEventListener('click', toggleLanguage)
 }
 
 const initializePartnersCarousel = () => {
