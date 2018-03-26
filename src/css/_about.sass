@@ -1,0 +1,47 @@
+@import "variables"
+@import "fonts"
+
+.c-about
+  .c-content__title
+    @media all and (min-width: 48em)
+      padding-bottom: 5.6vh
+  .c-content__wrapper
+    @media all and (min-width: 48em)
+      padding-bottom: 0
+  &__speakers
+    @media all and (min-width: 32em)
+      display: flex
+      flex-wrap: wrap
+  &__speaker
+    @media all and (min-width: 32em)
+      width: 48%
+    @media all and (min-width: 48em)
+      width: 23%
+      padding: 0 1%
+    &:nth-child(1),
+    &:nth-child(5),
+    &:nth-child(9),
+    &:nth-child(13),
+    &:nth-child(17),
+    &:nth-child(21),
+    &:nth-child(25)
+      padding: 0 2% 0 0
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(12),
+    &:nth-child(16),
+    &:nth-child(20),
+    &:nth-child(24)
+      padding: 0 0 0 2%
+  &__img
+    width: 100%
+    height: auto
+  &__speaker-desc
+    font-size: 1rem
+    letter-spacing: normal
+    @media all and (min-width: 48em)
+      margin-bottom: 4.3vh
+  &__speaker-name
+    @media all and (min-width: 48em)
+      font-size: 2vh
+      margin-top: 4.5vh
