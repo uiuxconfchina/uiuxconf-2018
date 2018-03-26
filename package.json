@@ -30,6 +30,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "common-tags": "^1.7.2",
     "jquery": "^3.3.1",
     "uuid": "^3.2.1"
   },
