@@ -306,3 +306,47 @@ other = "For more sponsorship details, please download the Sponsorship Package."
 other = "Download sponsor package"
 [about]
 other = "About UIUX conf"
+[pressSection1Title]
+other = "Media & Press"
+[pressSection1Paragraph1]
+other = "This September, more than 20 UI/UX advocates will share their ideas at UI/UX Conf 2018 in Shanghai."
+[pressSection1Paragraph2]
+other = "Experience it live and spread their voices."
+[pressSection2Title]
+other = "Previous media partners"
+[pressSection2Paragraph1]
+other = "Create an impact on the design world with other leading media outlets in the community."
+[pressSection3Title]
+other = "UI/UX Conf 2018 at a glance"
+[pressSection3Paragraph1]
+other = "<span class=\"u-bold\">2018 Theme: product, connection, platform</span>"
+[pressSection3Paragraph2]
+other = "The UI/UX Conf China is a community-driven design fest organized by Wiredcraft. Evolved from <a class=\"c-link\" href=\"https://www.meetup.com/UIUX-Meetup-SH/\">UIUX Designer Shanghai Meetup</a>, this two-day conference will feature 20+ speakers, 15+ talks, and 2+ workshops focusing on design, tech and business."
+[pressSection3Paragraph3]
+other = "This year’s program reflects design in the real world: fast-paced, hustle and bustle, complex, inherently messy. It’s cross-channel, multi-device, trans-disciplinary. While this conference is first and foremost about design, it’s not just design for design’s sake; it’s an exploration of the intersection of design, technology, and business."
+[pressSection3Paragraph4]
+other = "Learn more about the conference <a class=\"c-link\" href=\"#\">here</a>."
+[pressSection4Title]
+other = "Contact"
+[pressSection4Paragraph1]
+other = "(+86)021-52047028<br/><a class=\"c-link\" href=\"mailto:info@uiuxconf.com\">info@uiuxconf.com</a>"
+[pressSection5Title]
+other = "Naming Standard"
+[pressSection5Paragraph1]
+other = "<span class=\"u-bold\">Complete</span>"
+[pressSection5Paragraph2]
+other = "UI/UX Conference China 2018"
+[pressSection5Paragraph3]
+other = "2018中国交互与界面设计大会"
+[pressSection5Paragraph4]
+other = "<span class=\"u-bold\">Short</span>"
+[pressSection5Paragraph5]
+other = "UI/UX Conf 2018"
+[pressSection6Title]
+other = "Press material"
+[pressSection6Paragraph1]
+other = "UI/UX Conf 2018 logo"
+[pressSection6Paragraph2]
+other = "Press Kit"
+[pressSection6Paragraph3]
+other = "UI/UX Conf 2018 photos"

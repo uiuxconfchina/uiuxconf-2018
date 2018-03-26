@@ -1,0 +1,68 @@
+@import "variables"
+@import "fonts"
+
+.c-press
+  .c-content__title
+    @media all and (min-width: 48em)
+      padding-bottom: 5.6vh
+  .c-application-form
+    padding-top: 32px
+    @media all and (min-width: 48em)
+      padding-top: 14vh
+  .c-content__wrapper
+    @media all and (min-width: 48em)
+      padding-bottom: 0
+  &__partners
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    @media all and (min-width: 48em)
+      justify-content: space-between
+  &__partner
+    width: 40%
+    margin: 24px 0
+    height: 80px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    @media all and (min-width: 48em)
+      width: 17%
+      margin: 24px
+    &_technode
+      background-image: url("../img/press/technode.png")
+    &_arting
+      background-image: url("../img/press/arting.png")
+    &_creativehunt
+      background-image: url("../img/press/creativehunt.png")
+    &_wired
+      background-image: url("../img/press/wired.png")
+    &_tezign
+      background-image: url("../img/press/tezign.png")
+    &_techcrunch
+      background-image: url("../img/press/techcrunch.png")
+    &_cw
+      background-image: url("../img/press/cw.png")
+    &_monocle
+      background-image: url("../img/press/monocle.png")
+  &__materials
+    text-transform: uppercase
+    @media all and (min-width: 48em)
+      display: flex
+      justify-content: space-between
+  &__material
+    display: flex
+    flex-direction: column
+    @media all and (min-width: 48em)
+      width: 32%
+  &__tile
+    width: 100%
+    padding-bottom: 100%
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &_logo
+      background-image: url("../img/press/logo.png")
+    &_press-kit
+      background-image: url("../img/press/press-kit.png")
+    &_photos
+      background-image: url("../img/press/photos.png")

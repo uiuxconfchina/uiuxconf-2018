@@ -1,3 +1,110 @@
 {{ partial "header" . }}
-{{ partial "press-application-form" }}
+<section class="c-content c-press">
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection1Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "pressSection1Paragraph1"}}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection1Paragraph2"}}
+        </p>
+      </div>
+    </div>
+  </div>
+  {{ partial "press-application-form" }}
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection2Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "pressSection1Paragraph1" | safeHTML }}
+        </p>
+        <div class="c-content__paragraph c-press__partners">
+          <div class="c-press__partner c-press__partner_technode"></div>
+          <div class="c-press__partner c-press__partner_arting"></div>
+          <div class="c-press__partner c-press__partner_creativehunt"></div>
+          <div class="c-press__partner c-press__partner_wired"></div>
+          <div class="c-press__partner c-press__partner_tezign"></div>
+          <div class="c-press__partner c-press__partner_techcrunch"></div>
+          <div class="c-press__partner c-press__partner_cw"></div>
+          <div class="c-press__partner c-press__partner_monocle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection3Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "pressSection3Paragraph1" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection3Paragraph2" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection3Paragraph3" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection3Paragraph4" | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection4Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "pressSection4Paragraph1" | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection5Title" }}</h3>
+      <div class="c-content__wrapper">
+        <p class="c-content__paragraph">
+          {{ i18n "pressSection5Paragraph1" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection5Paragraph2" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection5Paragraph3" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection5Paragraph4" | safeHTML }}
+        </p>
+        <p class="c-content__paragraph c-content__paragraph_bottom">
+          {{ i18n "pressSection5Paragraph5" | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="c-content__section c-content__section_subpage">
+    <div class="u-container">
+      <h3 class="c-content__title">{{ i18n "pressSection6Title" }}</h3>
+      <div class="c-content__wrapper">
+        <div class="c-content__paragraph c-press__materials">
+          <a class="c-press__material" href="#">
+            <div class="c-press__tile c-press__tile_logo"></div>
+            <p class="u-bold">{{ i18n "pressSection6Paragraph1" | safeHTML }}</p>
+          </a>
+          <a class="c-press__material" href="#">
+            <div class="c-press__tile c-press__tile_press-kit"></div>
+            <p class="u-bold">{{ i18n "pressSection6Paragraph2" | safeHTML }}</p>
+          </a>
+          <a class="c-press__material" href="#">
+            <div class="c-press__tile c-press__tile_photos"></div>
+            <p class="u-bold">{{ i18n "pressSection6Paragraph3" | safeHTML }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ partial "footer" . }}
