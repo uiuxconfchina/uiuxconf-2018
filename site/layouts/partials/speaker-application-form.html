@@ -1,4 +1,4 @@
-<form class="c-application-form">
+<form class="c-application-form"  id="speaker-application-form">
   <div class="u-container">
     <h3 class="c-content__title">{{ i18n "speakerApplicationTitle" }}</h3>
     <div class="c-application-form__wrapper">
@@ -24,7 +24,7 @@
         <label class="c-application-form__label">{{ i18n "mobile" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__field c-application-form__field_halfwidth">
-        <input class="c-application-form__input" type="text" name="social-media" required="">
+        <input class="c-application-form__input" type="text" name="social-media" value="" onkeyup="this.setAttribute('value', this.value);">
         <label class="c-application-form__label">{{ i18n "socialMedia" }}</label>
       </div>
       <div class="c-application-form__field">
@@ -36,13 +36,18 @@
         <label class="c-application-form__label">{{ i18n "motivation" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__upload-field">
-        <div class="c-application-form__avatar"></div>
+        <div class="c-application-form__avatar" id="headshot-preview"></div>
         <div class="c-application-form__upload-instruction">
           <div>
             <p class="c-application-form__question c-application-form__question_upload">{{ i18n "uploadHeadshot" }}<span class="c-application-form__asterisk">*</span></p>
             <p class="c-application-form__instruction">{{ i18n "headshotInstruction" }}</p>
           </div>
-          <button class="c-btn-primary c-application-form__btn">{{ i18n "upload" }}</button>
+          <label class="c-btn-primary c-application-form__btn c-application-form__btn_upload">
+            <div class="c-btn-primary c-application-form__btn_cover">
+              {{ i18n "upload" }}
+            </div>
+            <input type="file" name="headshot" required=""/>
+          </label>
         </div>
       </div>
       <h4 class="c-application-form__subtitle">{{ i18n "speakerApplicationSubTitle2" }}</h4>
@@ -51,7 +56,7 @@
         <label class="c-application-form__label">{{ i18n "talkTopic" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <p class="c-application-form__instruction">{{ i18n "talkTopicInstruction" }}</p>
-        <div class="c-application-form__field">
+      <div class="c-application-form__field">
         <textarea class="c-application-form__input" rows="3" type="text" name="talk-desc" required=""></textarea>
         <label class="c-application-form__label">{{ i18n "talkDesc" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
@@ -63,12 +68,12 @@
         <li>{{ i18n "talkDescInstructionList4" }}</li>
       </ul>
       <div class="c-application-form__field">
-        <textarea class="c-application-form__input" rows="2" type="text" name="prev-talks" required=""></textarea>
+        <textarea class="c-application-form__input" rows="2" type="text" name="prev-talks" value="" onkeyup="this.setAttribute('value', this.value);"></textarea>
         <label class="c-application-form__label">{{ i18n "prevTalks" }}</label>
       </div>
       <p class="c-application-form__question">{{ i18n "willCompanySponsor" }}<span class="c-application-form__asterisk">*</span></p>
       <label class="c-application-form__radio c-application-form__radio_inline">
-        <input type="radio" id="yes" name="sponsorship" value="yes">
+        <input type="radio" id="yes" name="sponsorship" value="yes" checked>
         <span class="c-application-form__checkmark"></span>
         <label for="yes">{{ i18n "yes" }}</label>
       </label>
@@ -79,7 +84,7 @@
       </label>
       <p class="c-application-form__question">{{ i18n "whatPresentationKind" }}<span class="c-application-form__asterisk">*</span></p>
       <label class="c-application-form__radio c-application-form__radio_block">
-        <input type="radio" id="mainStage" name="presentation" value="mainStage">
+        <input type="radio" id="mainStage" name="presentation" value="mainStage" checked>
         <label for="mainStage">{{ i18n "mainStage" }}</label>
         <span class="c-application-form__checkmark"></span>
       </label>

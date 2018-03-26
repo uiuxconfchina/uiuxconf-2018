@@ -1,6 +1,7 @@
 import $ from 'jquery'
 // eslint-disable-next-line
 import slick from 'slick-carousel'
+import './speakerForm'
 import './sponsorForm'
 
 const showMenu = (menu, button) => {
