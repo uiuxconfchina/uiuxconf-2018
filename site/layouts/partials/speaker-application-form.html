@@ -42,8 +42,10 @@
             <p class="c-application-form__question c-application-form__question_upload">{{ i18n "uploadHeadshot" }}<span class="c-application-form__asterisk">*</span></p>
             <p class="c-application-form__instruction">{{ i18n "headshotInstruction" }}</p>
           </div>
-          <label class="c-btn-primary c-application-form__btn">
-            {{ i18n "upload" }}
+          <label class="c-btn-primary c-application-form__btn c-application-form__btn_upload">
+            <div class="c-btn-primary c-application-form__btn_cover">
+              {{ i18n "upload" }}
+            </div>
             <input type="file" />
           </label>
         </div>
