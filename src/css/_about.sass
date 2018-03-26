@@ -2,10 +2,15 @@
 @import "fonts"
 
 .c-about
+  @media all and (min-width: 48em)
+    padding-bottom: 0
   .c-content__title
     @media all and (min-width: 48em)
       padding-bottom: 5.6vh
   .c-content__wrapper
+    @media all and (min-width: 48em)
+      padding-bottom: 0
+  .c-content__section_subpage
     @media all and (min-width: 48em)
       padding-bottom: 0
   &__speakers
@@ -13,10 +18,11 @@
       display: flex
       flex-wrap: wrap
   &__speaker
+    box-sizing: border-box
     @media all and (min-width: 32em)
       width: 48%
     @media all and (min-width: 48em)
-      width: 23%
+      width: 25%
       padding: 0 1%
     &:nth-child(1),
     &:nth-child(5),
@@ -45,3 +51,19 @@
     @media all and (min-width: 48em)
       font-size: 2vh
       margin-top: 4.5vh
+  &__photos
+    padding-bottom: 32px
+    @media all and (min-width: 48em)
+      padding-bottom: 10vh
+      display: flex
+      justify-content: space-between
+      align-items: space-between
+      flex-wrap: wrap
+      align-items: flex-start
+  &__photo
+    width: 100%
+    height: auto
+    @media all and (min-width: 48em)
+      width: 44%
+    &_narrow
+      width: 26%
