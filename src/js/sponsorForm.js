@@ -1,5 +1,5 @@
-import {getElemInScope} from './utils'
-import {createSponsor} from './api'
+import {getElemInScope, formatSponsorPayload} from './utils'
+import {postToZapier} from './api'
 
 (() => {
   class SponsorForm {
@@ -51,7 +51,7 @@ import {createSponsor} from './api'
 
   sponsorForm.form.submit((evt) => {
     evt.preventDefault()
-    createSponsor(sponsorForm.getPayload())
+    postToZapier(formatSponsorPayload(sponsorForm.getPayload()))
       .done(() => {
         // TODO: modal
         alert('Success')
