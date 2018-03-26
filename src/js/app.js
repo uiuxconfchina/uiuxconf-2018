@@ -1,8 +1,6 @@
 import $ from 'jquery'
 // eslint-disable-next-line
 import slick from 'slick-carousel'
-import './speakerForm'
-import './sponsorForm'
 
 const showMenu = (menu, button) => {
   menu.classList.remove('u-hidden')
@@ -68,7 +66,18 @@ const checkResolution = (e) => {
   e.matches ? initializePartnersCarousel() : null
 }
 
+const dynamicModulesImport = () => {
+  const {href} = window.location
+  if (/callforspeaker/.test(href)) {
+    import('./speakerForm')
+  }
+  if (/callforsponsor/.test(href)) {
+    import('./sponsorForm')
+  }
+}
+
 const init = () => {
+  dynamicModulesImport()
   addToggleMenuListener()
   addToggleLanguageListener()
   initializePartnersCarousel()
