@@ -24,7 +24,7 @@
         <label class="c-application-form__label">{{ i18n "mobile" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__field c-application-form__field_halfwidth">
-        <input class="c-application-form__input" type="text" name="social-media" required="">
+        <input class="c-application-form__input" type="text" name="social-media" value="" onkeyup="this.setAttribute('value', this.value);">
         <label class="c-application-form__label">{{ i18n "socialMedia" }}</label>
       </div>
       <div class="c-application-form__field">
@@ -68,7 +68,7 @@
         <li>{{ i18n "talkDescInstructionList4" }}</li>
       </ul>
       <div class="c-application-form__field">
-        <textarea class="c-application-form__input" rows="2" type="text" name="prev-talks" required=""></textarea>
+        <textarea class="c-application-form__input" rows="2" type="text" name="prev-talks" value="" onkeyup="this.setAttribute('value', this.value);"></textarea>
         <label class="c-application-form__label">{{ i18n "prevTalks" }}</label>
       </div>
       <p class="c-application-form__question">{{ i18n "willCompanySponsor" }}<span class="c-application-form__asterisk">*</span></p>
