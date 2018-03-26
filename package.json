@@ -1,4 +1,4 @@
- {
+{
   "name": "uiuxconf-2018",
   "version": "1.0.0",
   "description": "Website for 2018 UI/UX Chinese Conference",
@@ -18,7 +18,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint src --fix", "git add"]
+    "*.js": [
+      "eslint src --fix",
+      "git add"
+    ]
   },
   "author": {
     "name": "Wiredcraft",
