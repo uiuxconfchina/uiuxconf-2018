@@ -1,11 +1,9 @@
 import $ from 'jquery'
 
-const host = 'https://hooks.zapier.com/hooks/catch/66762'
-
-const genPostApi = (endpoint) => (payload) => $.post(`${host}${endpoint}`, payload)
-
-export const createSponsor = genPostApi('/kfv3ii')
-export const createSpeaker = genPostApi('/kaylki')
+export const postToZapier = (payload) => {
+  const url = 'https://hooks.zapier.com/hooks/catch/66762/kqkp1y/'
+  return $.post(url, payload)
+}
 
 export const uploadImg = (data) =>
   $.ajax({
