@@ -5,8 +5,7 @@ import uuid from 'uuid/v4'
 (() => {
   class SpeakerForm {
     constructor(elems) {
-      this.form = elems.form
-      this.headshot = elems.headshot
+      this._form = elems.form
       this._name = elems.name
       this._city = elems.city
       this._email = elems.email
@@ -71,7 +70,10 @@ import uuid from 'uuid/v4'
       this._sponsored.filter(`[value="${sponsored}"]`).prop('checked', true)
       this._preference.filter(`[value="${preference}"]`).prop('checked', true)
     }
+
+    submit = (...rest) => this._form.submit(...rest)
   }
+
 
   const getElem = getElemInScope('#speaker-application-form')
   const elems = {
@@ -84,16 +86,16 @@ import uuid from 'uuid/v4'
     social: getElem('[name="social-media"]'),
     bio: getElem('[name="bio"]'),
     reason: getElem('[name="motivation"]'),
-    headshot: getElem('[name="headshot"]'),
     topic: getElem('[name="talk-topic"]'),
     desc: getElem('[name="talk-desc"]'),
     talks: getElem('[name="prev-talks"]'),
     sponsored: getElem('[name="sponsorship"]'),
     preference: getElem('[name="presentation"]'),
   }
-  const headshotPreview = getElem('#headshot-preview')
 
   const speakerForm = new SpeakerForm(elems)
+  speakerForm.headshot = getElem('[name="headshot"]')
+  speakerForm.headshotPreview = getElem('#headshot-preview')
 
   speakerForm.headshot.change((evt) => {
 
@@ -113,14 +115,14 @@ import uuid from 'uuid/v4'
       .done(() => {
         const headshotLink = `https://s3-ap-northeast-2.amazonaws.com/wiredcraft-com/${filename}`
         speakerForm.headshotLink = headshotLink
-        headshotPreview.css({background: `url(${headshotLink})`})
+        speakerForm.headshotPreview.css({background: `url(${headshotLink})`})
       })
       .fail(() => {
         alert('Img upload Failed')
       })
   })
 
-  speakerForm.form.submit((evt) => {
+  speakerForm.submit((evt) => {
     evt.preventDefault()
 
     postToZapier(formatSpeakerPayload({...speakerForm.getPayload(), headshot: speakerForm.headshotLink}))

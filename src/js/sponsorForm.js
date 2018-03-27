@@ -4,7 +4,7 @@ import {postToZapier} from './api'
 (() => {
   class SponsorForm {
     constructor(elems) {
-      this.form = elems.form
+      this._form = elems.form
       this._name = elems.name
       this._company = elems.company
       this._email = elems.email
@@ -18,7 +18,7 @@ import {postToZapier} from './api'
       {
         name: this._name.val(),
         company: this._company.val(),
-        email: this._company.val(),
+        email: this._email.val(),
         phone: this._phone.val(),
         sponsorLevel: this._sponsorLevel.filter(':checked').val(),
         comments: this._comments.val(),
@@ -34,6 +34,8 @@ import {postToZapier} from './api'
       this._sponsorLevel.filter(`[value="${sponsorLevel}"]`).prop('checked', true)
       this._comments.val(comments)
     }
+
+    submit = (...rest) => this._form.submit(...rest)
   }
 
   const getElem = getElemInScope('#sponsor-application-form')
@@ -49,7 +51,7 @@ import {postToZapier} from './api'
 
   const sponsorForm = new SponsorForm(elems)
 
-  sponsorForm.form.submit((evt) => {
+  sponsorForm.submit((evt) => {
     evt.preventDefault()
     postToZapier(formatSponsorPayload(sponsorForm.getPayload()))
       .done(() => {
