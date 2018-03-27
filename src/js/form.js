@@ -10,7 +10,7 @@ export default class Form {
 
   constructor(elems) {
     // validation
-    if (!elems instanceof Object) {
+    if (!(elems instanceof Object)) {
       throw 'An object should be passed to init the form object'
     }
     if (!('form' in elems)) {
