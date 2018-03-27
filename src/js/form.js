@@ -5,6 +5,7 @@ export default class Form {
   // the logic doesn't cover all the edge cases
   static isTypeRadio = ($el) => $el.length > 1
 
+  // the _defaultPayload is not meant for outer access
   _defaultPayload = {}
 
   constructor(elems) {
@@ -17,7 +18,9 @@ export default class Form {
     }
     for (const field in elems) {
       const $el = elems[field]
+      // only the jquery element is valid
       if ($el instanceof $) {
+        // the elements are meant to be hidden
         this[`_${field}`] = elems[field]
       }
     }
@@ -27,8 +30,10 @@ export default class Form {
   getPayload = () => {
     const payload = {}
     for (const key in this) {
+      // the value of the form element won't be included in the form's payload data
       if (!/_form/.test(key)) {
         const $el = this[key]
+        // only the jquery element is valid
         if ($el instanceof $) {
           payload[key.slice(1)] = Form.isTypeRadio($el) ? $el.filter(':checked').val() : $el.val()
         }
@@ -49,5 +54,6 @@ export default class Form {
     }
   }
 
+  // simply expose the $form.submit method
   submit = (...rest) => this._form.submit(...rest)
 }
