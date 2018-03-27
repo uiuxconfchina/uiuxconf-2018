@@ -45,3 +45,16 @@ export const formatSpeakerPayload = (data) => (
     label: 'SPEAKER APPLICATION',
   }
 )
+
+export const formatMediaPayload = (data) => (
+  {
+    title: `Media Application from ${data.name}`,
+    body: stripIndent`
+      Name: **${data.name}**
+      Organization: **${data.organization}**
+      Email: **${data.email}**
+      Mobile: **${data.mobile}**
+    `,
+    label: 'MEDIA APPLICATION',
+  }
+)

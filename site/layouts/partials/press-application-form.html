@@ -1,9 +1,9 @@
-<form class="c-application-form">
+<form class="c-application-form" id="media-application-form">
   <div class="u-container">
     <div class="c-application-form__wrapper">
       <h4 class="c-application-form__subtitle">{{ i18n "fillInHere" }}</h4>
       <div class="c-application-form__field c-application-form__field_halfwidth">
-        <input class="c-application-form__input" type="text" name="your-full-name" required="">
+        <input class="c-application-form__input" type="text" name="fullname" required="">
         <label class="c-application-form__label">{{ i18n "yourFullName" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__field c-application-form__field_halfwidth">
@@ -15,7 +15,7 @@
         <label class="c-application-form__label">{{ i18n "email" }}<span class="c-application-form__asterisk">*</span></label>
       </div>
       <div class="c-application-form__field c-application-form__field_halfwidth">
-        <input class="c-application-form__input" type="text" name="mobile" required="">
+        <input class="c-application-form__input" type="text" name="mobile" value="" onkeyup="this.setAttribute('value', this.value);">
         <label class="c-application-form__label">{{ i18n "mobileOptional" }}</label>
       </div>
       <button class="c-btn-primary c-btn-primary_wide c-application-form__btn" type="submit">{{ i18n "applyForAccreditation" }}</button>

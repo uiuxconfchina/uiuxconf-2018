@@ -74,6 +74,9 @@ const dynamicModulesImport = () => {
   if (/callforsponsor/.test(href)) {
     import('./sponsorForm')
   }
+  if (/press/.test(href)) {
+    import('./mediaForm')
+  }
 }
 
 const init = () => {
